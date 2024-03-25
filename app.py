@@ -48,12 +48,12 @@ def get_gemini_repsonse(prompt, original_image):
 
 
 
-st.header("Brand Ai Hoşgeldiniz")
+st.header("Eye Authentic Hoşgeldiniz")
 
-st.sidebar.title("Brand Assistant")
-st.sidebar.subheader("Datalarin yuklenmesi biraz zaman alabilir. Lutfen bekleyin.")
+st.sidebar.title("Eye Authentic Assistant")
+st.sidebar.subheader("Görselinizin yüklenmesi biraz zaman alabilir. Lütfen bekleyin.")
 
-uploaded_image = st.sidebar.file_uploader("Upload an image", type=["png", "jpg", "jpeg", "webp"])
+uploaded_image = st.sidebar.file_uploader("Lütfen sadece belirtilen formatlarda yükleme yapın", type=["png", "jpg", "jpeg", "webp"])
 
 if uploaded_image is not None:
     original_image_parts = [{"mime_type": "image/jpeg",
@@ -98,7 +98,6 @@ if uploaded_image is not None:
     else:
         st.warning("Lütfen tekrar başlamak için butona basın.")
 
-# st.sidebar.checkbox("Asistanım inisiyatif alabilsin ve harici makineleri ekleyebilsin.", key="inisiyatif")
 
 
 
