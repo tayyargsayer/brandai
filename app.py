@@ -49,6 +49,7 @@ def get_gemini_repsonse(prompt, original_image):
 
 
 st.header("Eye Authentic Hoşgeldiniz")
+st.text("Son Güncelleme: 25.03.2024")
 
 st.sidebar.title("Eye Authentic Assistant")
 st.sidebar.subheader("Görselinizin yüklenmesi biraz zaman alabilir. Lütfen bekleyin.")
