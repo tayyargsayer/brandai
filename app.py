@@ -11,7 +11,7 @@ os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 generation_config = {
-    "temperature": 0.1,
+    "temperature": 0.2,
     "top_p": 0.90,
     "max_output_tokens": 2048,
 }
@@ -68,7 +68,9 @@ if uploaded_image is not None:
             1- While giving output, give the brand name, it's category and sub-category in Turkish.For example:
                 "Nike - Giyim - Spor Ayakkabı"
                 "Eti - Yiyecek - Bisküvi"
-            4- The results should be seen on a table.",
+            2- The results should be seen on a table.
+            3- If you can't see any brand on image, for example "car" image has been taken but there is no brand or amblem on it, don't write anything.
+            4- You should be careful about spelling, for example "Adıdas" instead of "Adidas" is not acceptable. You should check the spelling from the internet.
         """
               ]
 
