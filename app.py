@@ -107,17 +107,34 @@ if uploaded_image is not None:
     with tab2:
         control_button = st.button("Anomali kontrol et")
 
+        # prompt_2 = [original_image_parts[0],
+        #           f"""
+        #             I want you to inspect the file above and detect the real anomaly on it with high accuracy. While doing that, please follow these steps:
+        #                 1- You should consider the image as a paper and paper can have limited deformations. For example, a paper can be crumpled, torn, or have a hole in it.
+        #                 2- Some images may contain elements that seem like anomalies but are actually part of the design or marketing strategy. For example, a billboard for a window brand might include an image of a glass crack. These should not be considered as anomalies.
+        #                    If you sure about 99 percent the real anomaly (not anomaly design), you should say:
+        #                     "Görüntüde deformasyon tespit edildi!
+        #                     Else, you should say:
+        #                     "Görüntüde deformasyon tespit edilemedi!"
+        #
+        #
+        #                """
+        #           ]
+
         prompt_2 = [original_image_parts[0],
-                  f"""
-                    I want you to inspect the file above and detect the brands on it with high accuracy. While doing that, please follow these steps:
-                        1- If there is any deformation on the image, or billboards or any other objects that are not related to the brands:
-                        Note: Some images may contain elements that seem like anomalies but are actually part of the design or marketing strategy. For example, a billboard for a window brand might include an image of a glass crack. These should not be considered as anomalies.
-                           If you not sure about the anomaly, you can say:
-                            "Görüntüde deformasyon tespit edildi! - Reklam Panosunda ...... (deformation type)(efect, etc.) olabilir."
-                            "Görüntüde deformasyon tespit edildi! - Billboard'da ....... (deformation type) (efect, etc.) olabilir."
+                    f"""
+                    I want you to inspect the file above and check the anomaly for is it design or image is really parished or damaged. While doing that, please follow these steps:
+                        1- You should consider the image as a paper and paper can have limited deformations. For example, a paper can be crumpled, torn, or have a hole in it.
+                        2-Bilboard or image can be ruptured, ripped, or worn and shattered. These should be considered as anomalies.
+                        3- Some images may contain elements or visual effects like that seem like anomalies but are actually part of the design or marketing strategy. For example, a billboard for a screen brand might include an image of a glass crack. These should be considered as effect.
+                           If the image is really parished or damaged, you should say:
+                            "Efekt yok!"
+                            If the image is not really parished or damaged, it can be effect for example, you should say:
+                            "Efekt var!"
+
 
                        """
-                  ]
+                    ]
 
         if uploaded_image and control_button:
             status_placeholder_2 = st.empty()
