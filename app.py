@@ -11,7 +11,7 @@ os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 generation_config = {
-    "temperature": 0.4,
+    "temperature": 0.45,
     "top_p": 0.90,
     "max_output_tokens": 2048,
 }
@@ -61,60 +61,85 @@ if uploaded_image is not None:
     original_image_parts = [{"mime_type": "image/jpeg",
                              "data": uploaded_image.read()}]
 
-    start_button = st.button("Analiz et")
+    tab1, tab2 = st.tabs(["Marka Analizi", "Anomali Kontrolü"])
+
+    with tab1:
+        start_button = st.button("Marka analizi yap")
 
 
-    prompt = [original_image_parts[0],
-              f"""
-        I want you to inspect the file above and detect the brands on it with high accuracy. While doing that, please follow these steps:
-            1- If there is any deformation on the image, or billboards or any other objects that are not related to the brands:
-            Note: Some images may contain elements that seem like anomalies but are actually part of the design or marketing strategy. For example, a billboard for a window brand might include an image of a glass crack. These should not be considered as anomalies.
-               If you not sure about the anomaly, you can say:
-                "Görüntüde deformasyon olabilir - Reklam Panosunda yırtık olabildiği için marka teşhisi yapamıyorum"
-                "Görüntüde deformasyon olabilir - Billboard'da efekt olduğu için marka teşhisi yapamıyorum"
-               
-               If you detect a real anomaly, stop the process and report the category of the deformation in Turkish. For example:
-
-                "Görüntüde deformasyon var - Reklam Panosunda yırtık var"
-                "Görüntüde deformasyon var - Billboard'da yırtık var"
-                'Görüntüde deformasyon var - Bir nesne görünüyor ama marka değil'
-                
-            
-                
-            2- While giving output, give the brand name, it's category and sub-category in Turkish.For example:
-                "Nike - Giyim - Spor Ayakkabı"
-                "Eti - Yiyecek - Bisküvi"
-            3- The results should be seen on a table.
-            4- If you can't see any brand on image, for example "car" image has been taken but there is no brand or amblem on it, don't write anything.
-            5- You should be careful about spelling, for example "Adıdas" instead of "Adidas" is not acceptable. You should check the spelling from the internet.
-        """
-              ]
+        prompt = [original_image_parts[0],
+                  f"""
+            I want you to inspect the file above and detect the brands on it with high accuracy. While doing that, please follow these steps:
+                1- While giving output, give the brand name, it's category and sub-category in Turkish.For example:
+                    "Nike - Giyim - Spor Ayakkabı"
+                    "Eti - Yiyecek - Bisküvi"
+                3- The results should be seen on a table.
+                4- If you can't see any brand on image, for example "car" image has been taken but there is no brand or amblem on it, don't write anything.
+                5- You should be careful about spelling, for example "Adıdas" instead of "Adidas" is not acceptable. You should check the spelling from the internet.
+            """
+                  ]
 
 
-    if uploaded_image and start_button:
-        status_placeholder = st.empty()
-        status_placeholder.status("Görsel Analiz Ediliyor..")
-        response = model.generate_content(prompt)
+        if uploaded_image and start_button:
+            status_placeholder = st.empty()
+            status_placeholder.status("Görsel analiz Ediliyor..")
+            response = model.generate_content(prompt)
 
 
-        st.write(response.text)
-        complete_message = status_placeholder.success("Analiz Tamamlandı")
+            st.write(response.text)
+            complete_message = status_placeholder.success("Görsel analizi analizi tamamlandı")
 
-        if complete_message:
-            col1, col2, col3 = st.columns([1,2,1])
-            with col2:
-                download_button = st.markdown(
-                    f'<a href="data:text/plain;charset=utf-8,{response.text}" download="response.txt">'
-                    '<button class="streamlit-button-outlined" style="margin:10px;padding:10px;color:white;background-color:#FF6347;box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);border-radius: 10px;">İndir</button>'
-                    '</a>',
-                    unsafe_allow_html=True,
-                )
-
-
+            if complete_message:
+                col1, col2, col3 = st.columns([1,2,1])
+                with col2:
+                    download_button = st.markdown(
+                        f'<a href="data:text/plain;charset=utf-8,{response.text}" download="response.txt">'
+                        '<button class="streamlit-button-outlined" style="margin:10px;padding:10px;color:white;background-color:#FF6347;box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);border-radius: 10px;">İndir</button>'
+                        '</a>',
+                        unsafe_allow_html=True,
+                    )
 
 
-    else:
-        st.warning("Lütfen tekrar başlamak için butona basın.")
+        else:
+            st.warning("Lütfen başlamak için butona basın.")
+
+
+    with tab2:
+        control_button = st.button("Anomali kontrol et")
+
+        prompt_2 = [original_image_parts[0],
+                  f"""
+                    I want you to inspect the file above and detect the brands on it with high accuracy. While doing that, please follow these steps:
+                        1- If there is any deformation on the image, or billboards or any other objects that are not related to the brands:
+                        Note: Some images may contain elements that seem like anomalies but are actually part of the design or marketing strategy. For example, a billboard for a window brand might include an image of a glass crack. These should not be considered as anomalies.
+                           If you not sure about the anomaly, you can say:
+                            "Görüntüde deformasyon tespit edildi! - Reklam Panosunda ...... (deformation type)(efect, etc.) olabilir."
+                            "Görüntüde deformasyon tespit edildi! - Billboard'da ....... (deformation type) (efect, etc.) olabilir."
+
+                       """
+                  ]
+
+        if uploaded_image and control_button:
+            status_placeholder_2 = st.empty()
+            status_placeholder_2.status("Anomali kontrol Ediliyor..")
+            response_2 = model.generate_content(prompt_2)
+
+            st.write(response_2.text)
+            complete_message_2 = status_placeholder_2.success("Anomali kontrolü Tamamlandı")
+
+            if complete_message_2:
+                col1, col2, col3 = st.columns([1, 2, 1])
+                with col2:
+                    download_button = st.markdown(
+                        f'<a href="data:text/plain;charset=utf-8,{response_2.text}" download="response.txt">'
+                        '<button class="streamlit-button-outlined" style="margin:10px;padding:10px;color:white;background-color:#FF6347;box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);border-radius: 10px;">İndir</button>'
+                        '</a>',
+                        unsafe_allow_html=True,
+                    )
+
+
+        else:
+            st.warning("Lütfen başlamak için butona basın.")
 
 
 
