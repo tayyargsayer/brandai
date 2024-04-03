@@ -11,7 +11,7 @@ os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 generation_config = {
-    "temperature": 0.2,
+    "temperature": 0.4,
     "top_p": 0.90,
     "max_output_tokens": 2048,
 }
@@ -49,7 +49,7 @@ def get_gemini_repsonse(prompt, original_image):
 
 
 st.header("Eye Authentic Hoşgeldiniz")
-st.text("Son Güncelleme: 25.03.2024")
+st.text("Son Güncelleme: 03.04.2024")
 
 st.sidebar.title("Eye Authentic Assistant")
 st.sidebar.subheader("Görselinizin yüklenmesi biraz zaman alabilir. Lütfen bekleyin.")
@@ -57,6 +57,7 @@ st.sidebar.subheader("Görselinizin yüklenmesi biraz zaman alabilir. Lütfen be
 uploaded_image = st.sidebar.file_uploader("Lütfen sadece belirtilen formatlarda yükleme yapın", type=["png", "jpg", "jpeg", "webp"])
 
 if uploaded_image is not None:
+    st.sidebar.image(uploaded_image, caption="Yüklenen Görsel", use_column_width=True)
     original_image_parts = [{"mime_type": "image/jpeg",
                              "data": uploaded_image.read()}]
 
@@ -65,13 +66,27 @@ if uploaded_image is not None:
 
     prompt = [original_image_parts[0],
               f"""
-        I want you to ınspect the file above and detect the brands on it with high accuracy. While doing that, please follow these steps:
-            1- While giving output, give the brand name, it's category and sub-category in Turkish.For example:
+        I want you to inspect the file above and detect the brands on it with high accuracy. While doing that, please follow these steps:
+            1- If there is any deformation on the image, or billboards or any other objects that are not related to the brands:
+            Note: Some images may contain elements that seem like anomalies but are actually part of the design or marketing strategy. For example, a billboard for a window brand might include an image of a glass crack. These should not be considered as anomalies.
+               If you not sure about the anomaly, you can say:
+                "Görüntüde deformasyon olabilir - Reklam Panosunda yırtık olabildiği için marka teşhisi yapamıyorum"
+                "Görüntüde deformasyon olabilir - Billboard'da efekt olduğu için marka teşhisi yapamıyorum"
+               
+               If you detect a real anomaly, stop the process and report the category of the deformation in Turkish. For example:
+
+                "Görüntüde deformasyon var - Reklam Panosunda yırtık var"
+                "Görüntüde deformasyon var - Billboard'da yırtık var"
+                'Görüntüde deformasyon var - Bir nesne görünüyor ama marka değil'
+                
+            
+                
+            2- While giving output, give the brand name, it's category and sub-category in Turkish.For example:
                 "Nike - Giyim - Spor Ayakkabı"
                 "Eti - Yiyecek - Bisküvi"
-            2- The results should be seen on a table.
-            3- If you can't see any brand on image, for example "car" image has been taken but there is no brand or amblem on it, don't write anything.
-            4- You should be careful about spelling, for example "Adıdas" instead of "Adidas" is not acceptable. You should check the spelling from the internet.
+            3- The results should be seen on a table.
+            4- If you can't see any brand on image, for example "car" image has been taken but there is no brand or amblem on it, don't write anything.
+            5- You should be careful about spelling, for example "Adıdas" instead of "Adidas" is not acceptable. You should check the spelling from the internet.
         """
               ]
 
@@ -109,6 +124,7 @@ if uploaded_image is not None:
 
 
 
+# streamlit run c.py --server.runOnSave=True
 
 
 
