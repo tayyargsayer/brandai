@@ -4,6 +4,10 @@ import streamlit as st
 import google.generativeai as genai
 from PIL import Image
 from dotenv import load_dotenv
+from google.cloud import firestore
+import pydeck as pdk
+import pandas as pd
+import collections
 
 load_dotenv()
 
@@ -12,7 +16,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 generation_config = {
     "temperature": 0.45,
-    "top_p": 0.90,
+    "top_p": 0.9,
     "max_output_tokens": 2048,
 }
 
@@ -34,9 +38,12 @@ safety_settings = [
         "threshold": "BLOCK_MEDIUM_AND_ABOVE"
     },
 ]
+
+
 model = genai.GenerativeModel(model_name="gemini-1.0-pro-vision-latest",
                               generation_config=generation_config,
                               safety_settings=safety_settings)
+
 
 def get_gemini_repsonse(prompt, original_image):
     model = genai.GenerativeModel(model_name="gemini-1.0-pro-vision-latest",
@@ -46,6 +53,44 @@ def get_gemini_repsonse(prompt, original_image):
     response = model.generate_content([prompt, original_image])
     return response.text
 
+
+def location_map(photo_dict):
+    if 'location' in photo_dict and isinstance(photo_dict['location'], firestore.GeoPoint):
+        location = photo_dict['location']
+
+        # Extract the latitude and longitude
+        latitude = location.latitude
+        longitude = location.longitude
+
+        st.write(f"Latitude: {latitude}, Longitude: {longitude}")
+
+        # Create a PyDeck map
+        map = pdk.Deck(
+            map_style='mapbox://styles/mapbox/light-v9',
+            initial_view_state=pdk.ViewState(
+                latitude=latitude,
+                longitude=longitude,
+                zoom=15,
+                pitch=100,
+            ),
+            # Add a layer with the location
+            layers=[
+                pdk.Layer(
+                    'ScatterplotLayer',
+                    data=[{'position': [longitude, latitude]}],
+                    get_position='position',
+                    get_color='[200, 30, 0, 160]',
+                    get_radius=15,
+                )
+            ]
+        )
+
+        # Display the map
+        st.pydeck_chart(map)
+
+    return map
+
+st.set_page_config(layout="wide")
 
 
 st.header("Eye Authentic Hoşgeldiniz")
@@ -61,9 +106,12 @@ if uploaded_image is not None:
     original_image_parts = [{"mime_type": "image/jpeg",
                              "data": uploaded_image.read()}]
 
-    tab1, tab2 = st.tabs(["Marka Analizi", "Anomali Kontrolü"])
+tab1, tab2, tab3 = st.tabs(["Marka Analizi", "Anomali Kontrolü", "Raporlama"])
 
-    with tab1:
+with tab1:
+    if uploaded_image is None:
+        st.warning("Lütfen bir görsel yükleyin.")
+    else:
         start_button = st.button("Marka analizi yap")
 
 
@@ -104,22 +152,11 @@ if uploaded_image is not None:
             st.warning("Lütfen başlamak için butona basın.")
 
 
-    with tab2:
+with tab2:
+    if uploaded_image is None:
+        st.warning("Lütfen bir görsel yükleyin.")
+    else:
         control_button = st.button("Anomali kontrol et")
-
-        # prompt_2 = [original_image_parts[0],
-        #           f"""
-        #             I want you to inspect the file above and detect the real anomaly on it with high accuracy. While doing that, please follow these steps:
-        #                 1- You should consider the image as a paper and paper can have limited deformations. For example, a paper can be crumpled, torn, or have a hole in it.
-        #                 2- Some images may contain elements that seem like anomalies but are actually part of the design or marketing strategy. For example, a billboard for a window brand might include an image of a glass crack. These should not be considered as anomalies.
-        #                    If you sure about 99 percent the real anomaly (not anomaly design), you should say:
-        #                     "Görüntüde deformasyon tespit edildi!
-        #                     Else, you should say:
-        #                     "Görüntüde deformasyon tespit edilemedi!"
-        #
-        #
-        #                """
-        #           ]
 
         prompt_2 = [original_image_parts[0],
                     f"""
@@ -131,8 +168,8 @@ if uploaded_image is not None:
                             "Efekt yok!"
                             If the image is not really parished or damaged, it can be effect for example, you should say:
                             "Efekt var!"
-
-
+    
+    
                        """
                     ]
 
@@ -158,6 +195,59 @@ if uploaded_image is not None:
         else:
             st.warning("Lütfen başlamak için butona basın.")
 
+
+with tab3:
+    # Authenticate to Firestore with the JSON account key.
+    db = firestore.Client.from_service_account_json("firestore-key.json")
+
+    # Specify the user ID
+    user_id = st.text_input("Lütfen kullanıcı ID'sini girin")
+    if user_id:
+
+        # Fetch all documents from the 'user_photos' subcollection of the specified user
+        user_photos_ref = db.collection('users').document(user_id).collection('user_photos')
+        user_photos = user_photos_ref.get()
+
+        col1, col2 = st.columns([3, 1])
+
+        with col1:
+
+            with st.expander("Kullanıcı Fotoğrafları"):
+                for photo in user_photos:
+                    st.write(photo.to_dict())
+
+        with col2:
+            brands = []
+            for photo in user_photos:
+                photo_dict = photo.to_dict()
+                if 'brands' in photo_dict:
+                    brands.append(photo_dict['brands'])
+
+            with st.expander("Tüm Markalar"):
+                st.write(brands)
+
+        st.divider()
+
+        brand_counts = collections.Counter(brands)
+
+        # Convert the result to a DataFrame
+        df = pd.DataFrame.from_dict(brand_counts, orient='index', columns=['count']).reset_index()
+        df = df.rename(columns={'index': 'brand'})
+
+        st.bar_chart(df.set_index('brand'))
+
+
+
+        st.divider()
+
+
+        st.subheader("Örnektir.")
+        location_map(photo_dict)
+
+
+
+    else:
+        st.warning("Lütfen kullanıcı ID'sini girin.")
 
 
 
