@@ -94,7 +94,7 @@ st.set_page_config(layout="wide")
 
 
 st.header("Eye Authentic Hoşgeldiniz")
-st.text("Son Güncelleme: 03.04.2024")
+st.text("Son Güncelleme: 18.04.2024")
 
 st.sidebar.title("Eye Authentic Assistant")
 st.sidebar.subheader("Görselinizin yüklenmesi biraz zaman alabilir. Lütfen bekleyin.")
@@ -107,6 +107,28 @@ if uploaded_image is not None:
                              "data": uploaded_image.read()}]
 
 tab1, tab2, tab3 = st.tabs(["Marka Analizi", "Anomali Kontrolü", "Raporlama"])
+st.markdown("""
+    <style>
+
+    	.stTabs [data-baseweb="tab-list"] {
+    		gap: 2px;
+        }
+
+    	.stTabs [data-baseweb="tab"] {
+    		height: 50px;
+    		width: 100%;
+            white-space: pre-wrap;
+    		background-color: #F0F2F6;
+    		border-radius: 4px 4px 0px 0px;
+    		margin-right: 1%;
+        }
+
+    	.stTabs [aria-selected="true"] {
+      		background-color: brown;
+      		color: #FFFFFF;
+    	}
+
+    </style>""", unsafe_allow_html=True)
 
 with tab1:
     if uploaded_image is None:
