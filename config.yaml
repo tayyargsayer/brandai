@@ -1,0 +1,33 @@
+cookie:
+  expiry_days: 30
+  key: random_signature_key
+  name: random_cookie_name
+credentials:
+  usernames:
+    cancancan:
+      email: qpgsayer@gmail.com
+      failed_login_attempts: 1
+      logged_in: false
+      name: canosan
+      password: $2b$12$wZfwjweyQNr/2v7v2mdrBO9aDZKQuufc02Zvj9IPhI7Py4CctrA7i
+    cemocan:
+      email: cem@gmail.com
+      failed_login_attempts: 0
+      logged_in: false
+      name: cem ceminay
+      password: $2b$12$xpJFfPAbp1bywJ/674xSSuaX6IqyOT12OypUghgjtznls5oYgBL1q
+    jsmith:
+      email: jsmith@gmail.com
+      failed_login_attempts: 0
+      logged_in: false
+      name: John Smith
+      password: $2b$12$i./AnrVaSRBWOQJ4XnA4jOY8QTorj8YoukjcP3EhLca1BHWobRry2
+    rbriggs:
+      email: rbriggs@gmail.com
+      failed_login_attempts: 0
+      logged_in: false
+      name: Rebecca Briggs
+      password: $2b$12$ykGz/JuVGT0HgGzQLNtCj.YXNDzwGDRiy2yr8j0wIujD.38KZZoOO
+preauthorized:
+  emails:
+  - melsby@gmail.com
