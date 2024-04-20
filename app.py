@@ -9,6 +9,7 @@ import pydeck as pdk
 import pandas as pd
 import collections
 import streamlit_authenticator as stauth
+from datetime import datetime, timezone
 
 load_dotenv()
 
@@ -233,32 +234,78 @@ try:
         with tab3:
             # Authenticate to Firestore with the JSON account key.
             db = firestore.Client.from_service_account_json("firestore-key.json")
-
-            # Specify the user ID
             # user_id = st.text_input("Lütfen kullanıcı ID'sini girin")
             user_id = "YYfdk8Dd5NXgf7zriJgff9Xsh0i1"
+
+            # unique_brands = set()
+
+            unique_locations = set()
+
+            # Fetch all documents from the 'user_photos' subcollection of the specified user
+            user_photos_ref = db.collection('users').document(user_id).collection('user_photos')
+            user_photos = user_photos_ref.get()
+
+            for photo in user_photos:
+                # unique_brands.add(photo.to_dict()['brands'])
+
+                location = photo.to_dict()['location']
+                unique_locations.add((location.latitude, location.longitude))
+
+
             if user_id:
 
-                col1, col2, col3, col4 = st.columns([0.3, 0.4, 1, 0.5])
+                col1, col2, col3 = st.columns([0.4, 1.2, 0.3])
+
+                from datetime import datetime
 
                 with col1:
-                    st.selectbox("Lütfen ajans seçin", ["Ajans 1", "Ajans 2", "Ajans 3"])
-
-                with col2:
                     start_date = st.date_input("Kampanya Başlangıç Tarihi Seçin")
                     end_date = st.date_input("Kampanya Bitiş Tarihi Seçin")
 
-                with col3:
-                    brand_selection = st.multiselect("Lütfen marka seçin", ["Marka 1", "Marka 2", "Marka 3"])
+                    # Convert the dates to datetime at midnight
+                    start_datetime = datetime.combine(start_date, datetime.min.time())
+                    end_datetime = datetime.combine(end_date, datetime.min.time())
 
-                with col4:
-                    location_selection = st.selectbox("Lütfen lokasyon seçin", ["Lokasyon 1", "Lokasyon 2", "Lokasyon 3"])
+                    # Attach the timezone information
+                    start_datetime = start_datetime.replace(tzinfo=timezone.utc)
+                    end_datetime = end_datetime.replace(tzinfo=timezone.utc)
+
+                    filtered_photos = []
+
+                    # Fetch all documents from the 'user_photos' subcollection of the specified user
+                    user_photos_ref = db.collection('users').document(user_id).collection('user_photos')
+                    user_photos = user_photos_ref.get()
+
+                    for photo in user_photos:
+                        photo_start_date = photo.to_dict()['camp_start_date']
+                        photo_end_date = photo.to_dict()['camp_end_date']
+                        # Compare the photo_start_date with the start_date and photo_end_date with the end_date
+                        if photo_start_date >= start_datetime and photo_end_date <= end_datetime:
+                            filtered_photos.append(photo.to_dict())
+
+
+
+                with col2:
+                    brands = set()
+                    for photo in filtered_photos:
+                        brands.add(photo['brands'])
+
+                    brand_selection = st.multiselect("Lütfen marka seçin", [brand for brand in brands])
+                    st.write(f"Çalışılmış toplam marka sayısı {len(brands)}.")
+                    st.write(f"Seçilen marka sayısı {len(brand_selection)}.")
+
+
+                with col3:
+                    location_selection = st.selectbox("Lütfen lokasyon seçin", [location for location in unique_locations])
 
                 st.divider()
 
-                # Fetch all documents from the 'user_photos' subcollection of the specified user
-                user_photos_ref = db.collection('users').document(user_id).collection('user_photos')
-                user_photos = user_photos_ref.get()
+                st.write(f"Seçilen tarih aralığı ve markalara ait toplamda {len(brands)} adet döküman bulundu.")
+
+
+
+
+
 
 
 
@@ -273,7 +320,6 @@ try:
 
 
 
-    # # streamlit run c.py --server.runOnSave=True
 
 
     elif st.session_state["authentication_status"] is False:

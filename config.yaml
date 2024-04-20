@@ -4,19 +4,18 @@ cookie:
   name: some_cookie_name
 credentials:
   usernames:
-    jsmith:
-      email: jsmith@gmail.com
-      failed_login_attempts: 5
-      logged_in: false
-      name: John Smith
-      password: $2b$12$o20Sq7Zd/y.JJ8q29GYjXe/4oBxo8skH1JfWVHUUJ4xq5evAkwehK
     okurt:
-      email: tgorkemsayer@gmail.com
-      failed_login_attempts: 21
+      email: seyfettin@gmail.com
+      failed_login_attempts: 0
       logged_in: false
       name: "\xD6zg\xFCn Kurt"
-      password: $2b$12$exNjpu3V2wHjjZPAKS5k7eyjgpBNXfIlksIbrSlkPEp/S7L1gNoEW
+      password: $2b$12$L8a6.LY18BYoR75gNWUwDetCVVLDDQgI6OJRSoKulGCrii3oXMt2C
+    tayyardurden:
+      email: tgorkemsayer@gmail.com
+      failed_login_attempts: 0
+      logged_in: true
+      name: John Smith
+      password: $2b$12$MiKxccOGfRwRNLZPxHBqjeQQuFiI4x9W4ZPSBuL95VDlHuornMe26
 pre-authorized:
   emails:
-  - melsby@gmail.com
   - tgorkemsayer@gmail.com
