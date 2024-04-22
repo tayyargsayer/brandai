@@ -4,17 +4,17 @@ cookie:
   name: some_cookie_name
 credentials:
   usernames:
-    okurt:
-      email: seyfettin@gmail.com
+    ozkurt:
+      email: ozgun@gmail.com
       failed_login_attempts: 0
       logged_in: false
       name: "\xD6zg\xFCn Kurt"
-      password: $2b$12$L8a6.LY18BYoR75gNWUwDetCVVLDDQgI6OJRSoKulGCrii3oXMt2C
+      password: password123
     tayyardurden:
       email: tgorkemsayer@gmail.com
       failed_login_attempts: 0
       logged_in: true
-      name: John Smith
+      name: "Tayyar A\u011Fa"
       password: $2b$12$MiKxccOGfRwRNLZPxHBqjeQQuFiI4x9W4ZPSBuL95VDlHuornMe26
 pre-authorized:
   emails:

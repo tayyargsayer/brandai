@@ -10,6 +10,7 @@ import pandas as pd
 import collections
 import streamlit_authenticator as stauth
 from datetime import datetime, timezone
+import json
 
 load_dotenv()
 
@@ -56,7 +57,10 @@ def get_gemini_repsonse(prompt, original_image):
     return response.text
 
 
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide",
+                     page_title="Eye Authentic",
+                     page_icon="👁️",
+                     initial_sidebar_state="auto")
 
 
 
@@ -232,25 +236,23 @@ try:
                     st.warning("Lütfen başlamak için butona basın.")
 
         with tab3:
-            # Authenticate to Firestore with the JSON account key.
-            db = firestore.Client.from_service_account_json("firestore-key.json")
-            # user_id = st.text_input("Lütfen kullanıcı ID'sini girin")
+            # db = firestore.Client.from_service_account_json("firestore-key.json")
             user_id = "YYfdk8Dd5NXgf7zriJgff9Xsh0i1"
+            # user_photos_ref = db.collection('users').document(user_id).collection('user_photos')
+            # user_photos = user_photos_ref.get()
 
-            # unique_brands = set()
+            with open('user_photos.json', 'r', encoding='utf-8') as f:
+                user_photos = json.load(f)
 
+            unique_brands = set()
             unique_locations = set()
 
-            # Fetch all documents from the 'user_photos' subcollection of the specified user
-            user_photos_ref = db.collection('users').document(user_id).collection('user_photos')
-            user_photos = user_photos_ref.get()
 
             for photo in user_photos:
                 # unique_brands.add(photo.to_dict()['brands'])
 
-                location = photo.to_dict()['location']
-                unique_locations.add((location.latitude, location.longitude))
-
+                location = photo['location']
+                unique_locations.add((location['latitude'], location['longitude']))
 
             if user_id:
 
@@ -272,17 +274,14 @@ try:
 
                     filtered_photos = []
 
-                    # Fetch all documents from the 'user_photos' subcollection of the specified user
-                    user_photos_ref = db.collection('users').document(user_id).collection('user_photos')
-                    user_photos = user_photos_ref.get()
+                    from datetime import datetime
 
                     for photo in user_photos:
-                        photo_start_date = photo.to_dict()['camp_start_date']
-                        photo_end_date = photo.to_dict()['camp_end_date']
-                        # Compare the photo_start_date with the start_date and photo_end_date with the end_date
-                        if photo_start_date >= start_datetime and photo_end_date <= end_datetime:
-                            filtered_photos.append(photo.to_dict())
+                        photo_start_date = datetime.strptime(photo['camp_start_date'], "%Y-%m-%dT%H:%M:%S.%f%z")
+                        photo_end_date = datetime.strptime(photo['camp_end_date'], "%Y-%m-%dT%H:%M:%S.%f%z")
 
+                        if photo_start_date >= start_datetime and photo_end_date <= end_datetime:
+                            filtered_photos.append(photo)
 
 
                 with col2:
