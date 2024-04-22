@@ -1,0 +1,2312 @@
+[
+  {
+    "brands": "LC Waikiki",
+    "camp_start_date": "2024-04-04T22:56:22.963711+00:00",
+    "product": "Kadın Giyim",
+    "unit": "Window Graphic",
+    "location": {
+      "latitude": 40.9903,
+      "longitude": 29.0205482
+    },
+    "camp_end_date": "2024-05-08T22:56:22.963711+00:00"
+  },
+  {
+    "brands": "Taş Pınar",
+    "camp_start_date": "2024-04-18T22:55:11.040333+00:00",
+    "product": "Yatak",
+    "unit": "Neon Sign",
+    "location": {
+      "latitude": 40.9903,
+      "longitude": 29.0205482
+    },
+    "camp_end_date": "2024-05-17T22:55:11.041332+00:00"
+  },
+  {
+    "brands": "Taş Pınar",
+    "camp_start_date": "2024-03-22T22:56:20.801325+00:00",
+    "product": "Yorgan",
+    "unit": "Hoarding",
+    "location": {
+      "latitude": 40.8747,
+      "longitude": 29.129416
+    },
+    "camp_end_date": "2024-05-17T22:56:20.801325+00:00"
+  },
+  {
+    "brands": "Apple",
+    "camp_start_date": "2024-04-09T22:56:06.051894+00:00",
+    "product": "Bilgisayar",
+    "unit": "Panel",
+    "location": {
+      "latitude": 41.0133,
+      "longitude": 28.6489262
+    },
+    "camp_end_date": "2024-05-07T22:56:06.051894+00:00"
+  },
+  {
+    "brands": "Paşabahçe",
+    "camp_start_date": "2024-04-04T22:55:51.564585+00:00",
+    "product": "Cam Eşyalar",
+    "unit": "Signage",
+    "location": {
+      "latitude": 41.0338,
+      "longitude": 29.1013674
+    },
+    "camp_end_date": "2024-05-10T22:55:51.564585+00:00"
+  },
+  {
+    "brands": "Adidas",
+    "camp_start_date": "2024-04-08T22:55:52.506655+00:00",
+    "product": "Şort",
+    "unit": "LED Sign",
+    "location": {
+      "latitude": 40.8144,
+      "longitude": 29.3094221
+    },
+    "camp_end_date": "2024-04-23T22:55:52.506655+00:00"
+  },
+  {
+    "brands": "LC Waikiki",
+    "camp_start_date": "2024-03-25T22:55:40.157226+00:00",
+    "product": "Erkek Giyim",
+    "unit": "Bus Shelter",
+    "location": {
+      "latitude": 40.9833,
+      "longitude": 29.1278408
+    },
+    "camp_end_date": "2024-05-11T22:55:40.157226+00:00"
+  },
+  {
+    "brands": "LC Waikiki",
+    "camp_start_date": "2024-03-27T22:42:52.191237+00:00",
+    "product": "Kadın Giyim",
+    "unit": "Mobile Billboard",
+    "location": {
+      "latitude": 40.9339,
+      "longitude": 29.1650476
+    },
+    "camp_end_date": "2024-04-23T22:42:52.191237+00:00"
+  },
+  {
+    "brands": "Levi's",
+    "camp_start_date": "2024-03-27T22:55:30.847340+00:00",
+    "product": "Kot Pantolonlar",
+    "unit": "Transit Ad",
+    "location": {
+      "latitude": 40.8144,
+      "longitude": 29.3094221
+    },
+    "camp_end_date": "2024-05-14T22:55:30.847340+00:00"
+  },
+  {
+    "brands": "PepsiCo",
+    "camp_start_date": "2024-04-14T22:56:18.433781+00:00",
+    "product": "Pepsi",
+    "unit": "Mobile Billboard",
+    "location": {
+      "latitude": 41.0542,
+      "longitude": 28.8676458
+    },
+    "camp_end_date": "2024-04-27T22:56:18.433781+00:00"
+  },
+  {
+    "brands": "PepsiCo",
+    "camp_start_date": "2024-04-01T22:55:06.628333+00:00",
+    "product": "7Up",
+    "unit": "Panel",
+    "location": {
+      "latitude": 41.0349,
+      "longitude": 28.9122269
+    },
+    "camp_end_date": "2024-04-29T22:55:06.628333+00:00"
+  },
+  {
+    "brands": "Samsung",
+    "camp_start_date": "2024-03-28T22:56:00.475285+00:00",
+    "product": "Tablet",
+    "unit": "Pylon",
+    "location": {
+      "latitude": 41.0341,
+      "longitude": 28.8330754
+    },
+    "camp_end_date": "2024-05-16T22:56:00.475285+00:00"
+  },
+  {
+    "brands": "Levi's",
+    "camp_start_date": "2024-04-06T22:56:14.402989+00:00",
+    "product": "Kot Pantolonlar",
+    "unit": "Panel",
+    "location": {
+      "latitude": 40.8747,
+      "longitude": 29.129416
+    },
+    "camp_end_date": "2024-05-10T22:56:14.402989+00:00"
+  },
+  {
+    "brands": "Dalan",
+    "camp_start_date": "2024-04-04T22:42:51.259984+00:00",
+    "product": "Saç Kremleri",
+    "unit": "Hoarding",
+    "location": {
+      "latitude": 41.0133,
+      "longitude": 28.6489262
+    },
+    "camp_end_date": "2024-05-05T22:42:51.259984+00:00"
+  },
+  {
+    "brands": "Samsung",
+    "camp_start_date": "2024-03-28T22:55:50.633614+00:00",
+    "product": "Mobil Telefon",
+    "unit": "Window Graphic",
+    "location": {
+      "latitude": 40.8999,
+      "longitude": 29.193645
+    },
+    "camp_end_date": "2024-05-17T22:55:50.633614+00:00"
+  },
+  {
+    "brands": "Eti",
+    "camp_start_date": "2024-04-10T22:55:18.623909+00:00",
+    "product": "Süt Ürünleri",
+    "unit": "Wall Mural",
+    "location": {
+      "latitude": 40.8747,
+      "longitude": 29.129416
+    },
+    "camp_end_date": "2024-05-16T22:55:18.623909+00:00"
+  },
+  {
+    "brands": "Paşabahçe",
+    "camp_start_date": "2024-04-05T22:56:04.545893+00:00",
+    "product": "Cam Eşyalar",
+    "unit": "Display",
+    "location": {
+      "latitude": 41.0092,
+      "longitude": 28.7757748
+    },
+    "camp_end_date": "2024-05-02T22:56:04.545893+00:00"
+  },
+  {
+    "brands": "Ülker",
+    "camp_start_date": "2024-04-04T22:56:10.606924+00:00",
+    "product": "Bisküvi",
+    "unit": "Panel",
+    "location": {
+      "latitude": 41.0551,
+      "longitude": 28.9346367
+    },
+    "camp_end_date": "2024-04-24T22:56:10.606924+00:00"
+  },
+  {
+    "brands": "Levi's",
+    "camp_start_date": "2024-04-19T22:56:10.124926+00:00",
+    "product": "Kot Pantolonlar",
+    "unit": "Digital Screen",
+    "location": {
+      "latitude": 41.0371,
+      "longitude": 28.9774241
+    },
+    "camp_end_date": "2024-05-16T22:56:10.124926+00:00"
+  },
+  {
+    "brands": "PepsiCo",
+    "camp_start_date": "2024-04-05T22:55:30.146299+00:00",
+    "product": "7Up",
+    "unit": "Panel",
+    "location": {
+      "latitude": 41.0737,
+      "longitude": 28.2479161
+    },
+    "camp_end_date": "2024-05-13T22:55:30.146299+00:00"
+  },
+  {
+    "brands": "Şekerbank",
+    "camp_start_date": "2024-04-15T22:56:12.496956+00:00",
+    "product": "Lokum",
+    "unit": "Kiosk",
+    "location": {
+      "latitude": 40.8747,
+      "longitude": 29.129416
+    },
+    "camp_end_date": "2024-05-15T22:56:12.496956+00:00"
+  },
+  {
+    "brands": "Elidor",
+    "camp_start_date": "2024-04-14T22:56:20.293411+00:00",
+    "product": "Saç Boyaları",
+    "unit": "Monument Sign",
+    "location": {
+      "latitude": 41.1749,
+      "longitude": 29.609632
+    },
+    "camp_end_date": "2024-04-30T22:56:20.293411+00:00"
+  },
+  {
+    "brands": "Arçelik",
+    "camp_start_date": "2024-03-25T22:55:58.955244+00:00",
+    "product": "Bulaşık Makinesi",
+    "unit": "Monument Sign",
+    "location": {
+      "latitude": 41.0327,
+      "longitude": 29.0319534
+    },
+    "camp_end_date": "2024-05-12T22:55:58.955244+00:00"
+  },
+  {
+    "brands": "Samsung",
+    "camp_start_date": "2024-04-13T22:56:08.835900+00:00",
+    "product": "Televizyon",
+    "unit": "Standee",
+    "location": {
+      "latitude": 41.0105,
+      "longitude": 28.8741303
+    },
+    "camp_end_date": "2024-05-18T22:56:08.835900+00:00"
+  },
+  {
+    "brands": "Derimod",
+    "camp_start_date": "2024-04-08T22:55:34.560948+00:00",
+    "product": "Cüzdan",
+    "unit": "Pylon",
+    "location": {
+      "latitude": 41.0323,
+      "longitude": 29.169522
+    },
+    "camp_end_date": "2024-05-09T22:55:34.560948+00:00"
+  },
+  {
+    "brands": "Şekerbank",
+    "camp_start_date": "2024-04-10T22:55:20.761783+00:00",
+    "product": "Lokum",
+    "unit": "Standee",
+    "location": {
+      "latitude": 40.8747,
+      "longitude": 29.129416
+    },
+    "camp_end_date": "2024-05-19T22:55:20.761783+00:00"
+  },
+  {
+    "brands": "Corelle",
+    "camp_start_date": "2024-04-11T22:56:06.984894+00:00",
+    "product": "Yemek Takımları",
+    "unit": "Signage",
+    "location": {
+      "latitude": 40.9804,
+      "longitude": 28.8724221
+    },
+    "camp_end_date": "2024-04-25T22:56:06.984894+00:00"
+  },
+  {
+    "brands": "Şekerbank",
+    "camp_start_date": "2024-03-21T22:56:05.471894+00:00",
+    "product": "Lokum",
+    "unit": "Wall Mural",
+    "location": {
+      "latitude": 41.1271,
+      "longitude": 29.0978248
+    },
+    "camp_end_date": "2024-05-02T22:56:05.471894+00:00"
+  },
+  {
+    "brands": "Dyson",
+    "camp_start_date": "2024-04-02T22:56:08.247894+00:00",
+    "product": "Elektrikli Süpürgeler",
+    "unit": "bilboard",
+    "location": {
+      "latitude": 41.0092,
+      "longitude": 28.7757748
+    },
+    "camp_end_date": "2024-05-03T22:56:08.247894+00:00"
+  },
+  {
+    "brands": "Dalan",
+    "camp_start_date": "2024-04-07T22:56:17.031517+00:00",
+    "product": "Şampuanlar",
+    "unit": "Poster",
+    "location": {
+      "latitude": 41.0737,
+      "longitude": 28.2479161
+    },
+    "camp_end_date": "2024-05-20T22:56:17.031517+00:00"
+  },
+  {
+    "brands": "Ülker",
+    "camp_start_date": "2024-03-22T22:55:34.818948+00:00",
+    "product": "Süt Ürünleri",
+    "unit": "Signage",
+    "location": {
+      "latitude": 40.8796,
+      "longitude": 29.2580663
+    },
+    "camp_end_date": "2024-05-11T22:55:34.818948+00:00"
+  },
+  {
+    "brands": "Taş Pınar",
+    "camp_start_date": "2024-03-29T22:55:37.601583+00:00",
+    "product": "Yorgan",
+    "unit": "Poster",
+    "location": {
+      "latitude": 41.0441,
+      "longitude": 29.0017188
+    },
+    "camp_end_date": "2024-05-15T22:55:37.601583+00:00"
+  },
+  {
+    "brands": "Maybelline",
+    "camp_start_date": "2024-04-02T22:55:38.291878+00:00",
+    "product": "Makyaj Malzemeleri",
+    "unit": "Window Graphic",
+    "location": {
+      "latitude": 41.1271,
+      "longitude": 29.0978248
+    },
+    "camp_end_date": "2024-05-20T22:55:38.291878+00:00"
+  },
+  {
+    "brands": "Kütahya Porselen",
+    "camp_start_date": "2024-04-18T22:56:02.679893+00:00",
+    "product": "Porselen Takımlar",
+    "unit": "bilboard",
+    "location": {
+      "latitude": 41.0133,
+      "longitude": 28.6489262
+    },
+    "camp_end_date": "2024-04-27T22:56:02.679893+00:00"
+  },
+  {
+    "brands": "Adidas",
+    "camp_start_date": "2024-04-13T22:56:22.743671+00:00",
+    "product": "Şapka",
+    "unit": "bilboard",
+    "location": {
+      "latitude": 41.0371,
+      "longitude": 28.9774241
+    },
+    "camp_end_date": "2024-05-04T22:56:22.743671+00:00"
+  },
+  {
+    "brands": "PepsiCo",
+    "camp_start_date": "2024-04-10T22:55:10.112332+00:00",
+    "product": "7Up",
+    "unit": "Signage",
+    "location": {
+      "latitude": 40.9804,
+      "longitude": 28.5854223
+    },
+    "camp_end_date": "2024-04-26T22:55:10.112332+00:00"
+  },
+  {
+    "brands": "Coca-Cola",
+    "camp_start_date": "2024-04-01T22:56:01.751894+00:00",
+    "product": "Fanta",
+    "unit": "Bus Shelter",
+    "location": {
+      "latitude": 41.0349,
+      "longitude": 28.9122269
+    },
+    "camp_end_date": "2024-04-30T22:56:01.751894+00:00"
+  },
+  {
+    "brands": "Altınbaş",
+    "camp_start_date": "2024-04-01T22:55:04.791333+00:00",
+    "product": "Altın Takılar",
+    "unit": "LED Sign",
+    "location": {
+      "latitude": 41.0604,
+      "longitude": 28.9878272
+    },
+    "camp_end_date": "2024-05-09T22:55:04.791333+00:00"
+  },
+  {
+    "brands": "Paşabahçe",
+    "camp_start_date": "2024-04-05T22:56:21.321342+00:00",
+    "product": "Cam Eşyalar",
+    "unit": "Hoarding",
+    "location": {
+      "latitude": 40.8747,
+      "longitude": 29.129416
+    },
+    "camp_end_date": "2024-05-11T22:56:21.321342+00:00"
+  },
+  {
+    "brands": "Apple",
+    "camp_start_date": "2024-03-31T22:56:12.243301+00:00",
+    "product": "Mobil Telefon",
+    "unit": "Signage",
+    "location": {
+      "latitude": 41.0327,
+      "longitude": 29.0319534
+    },
+    "camp_end_date": "2024-05-06T22:56:12.243301+00:00"
+  },
+  {
+    "brands": "Eti",
+    "camp_start_date": "2024-04-02T22:42:51.021350+00:00",
+    "product": "Bisküvi",
+    "unit": "Panel",
+    "location": {
+      "latitude": 41.1864,
+      "longitude": 28.7389225
+    },
+    "camp_end_date": "2024-04-24T22:42:51.021350+00:00"
+  },
+  {
+    "brands": "Taş Pınar",
+    "camp_start_date": "2024-03-23T22:55:56.209949+00:00",
+    "product": "Yorgan",
+    "unit": "Poster",
+    "location": {
+      "latitude": 41.1749,
+      "longitude": 29.609632
+    },
+    "camp_end_date": "2024-04-30T22:55:56.209949+00:00"
+  },
+  {
+    "brands": "Xiaomi",
+    "camp_start_date": "2024-03-29T22:55:13.156255+00:00",
+    "product": "Akıllı Bileklik",
+    "unit": "bilboard",
+    "location": {
+      "latitude": 41.1421,
+      "longitude": 28.457567
+    },
+    "camp_end_date": "2024-05-17T22:55:13.156255+00:00"
+  },
+  {
+    "brands": "LC Waikiki",
+    "camp_start_date": "2024-04-04T22:56:16.303109+00:00",
+    "product": "Çocuk Giyim",
+    "unit": "LED Sign",
+    "location": {
+      "latitude": 40.9977,
+      "longitude": 28.8506599
+    },
+    "camp_end_date": "2024-05-13T22:56:16.303109+00:00"
+  },
+  {
+    "brands": "Kütahya Porselen",
+    "camp_start_date": "2024-04-04T22:55:14.087145+00:00",
+    "product": "Porselen Takımlar",
+    "unit": "Panel",
+    "location": {
+      "latitude": 40.9339,
+      "longitude": 29.1650476
+    },
+    "camp_end_date": "2024-04-25T22:55:14.087145+00:00"
+  },
+  {
+    "brands": "Nike",
+    "camp_start_date": "2024-04-18T22:56:04.195893+00:00",
+    "product": "Çorap",
+    "unit": "LED Sign",
+    "location": {
+      "latitude": 41.0203,
+      "longitude": 28.9339419
+    },
+    "camp_end_date": "2024-05-18T22:56:04.195893+00:00"
+  },
+  {
+    "brands": "Corelle",
+    "camp_start_date": "2024-04-13T22:55:33.625949+00:00",
+    "product": "Yemek Takımları",
+    "unit": "bilboard",
+    "location": {
+      "latitude": 41.0341,
+      "longitude": 28.8330754
+    },
+    "camp_end_date": "2024-05-02T22:55:33.625949+00:00"
+  },
+  {
+    "brands": "Coca-Cola",
+    "camp_start_date": "2024-04-08T22:55:07.550332+00:00",
+    "product": "Coca-Cola",
+    "unit": "LED Sign",
+    "location": {
+      "latitude": 41.0371,
+      "longitude": 28.9774241
+    },
+    "camp_end_date": "2024-04-21T22:55:07.550332+00:00"
+  },
+  {
+    "brands": "Çaykur",
+    "camp_start_date": "2024-03-31T22:55:27.006454+00:00",
+    "product": "Yeşil Çay",
+    "unit": "Banner",
+    "location": {
+      "latitude": 41.1749,
+      "longitude": 29.609632
+    },
+    "camp_end_date": "2024-04-29T22:55:27.006454+00:00"
+  },
+  {
+    "brands": "Ülker",
+    "camp_start_date": "2024-03-30T22:56:24.362307+00:00",
+    "product": "Bisküvi",
+    "unit": "Pylon",
+    "location": {
+      "latitude": 40.9804,
+      "longitude": 28.8724221
+    },
+    "camp_end_date": "2024-04-24T22:56:24.362307+00:00"
+  },
+  {
+    "brands": "Çaykur",
+    "camp_start_date": "2024-04-02T22:55:32.002948+00:00",
+    "product": "Siyah Çay",
+    "unit": "Banner",
+    "location": {
+      "latitude": 40.9684,
+      "longitude": 29.2620315
+    },
+    "camp_end_date": "2024-05-08T22:55:32.002948+00:00"
+  },
+  {
+    "brands": "Çaykur",
+    "camp_start_date": "2024-03-28T22:56:16.063878+00:00",
+    "product": "Yeşil Çay",
+    "unit": "Neon Sign",
+    "location": {
+      "latitude": 41.0327,
+      "longitude": 29.0319534
+    },
+    "camp_end_date": "2024-05-19T22:56:16.063878+00:00"
+  },
+  {
+    "brands": "Huawei",
+    "camp_start_date": "2024-03-21T22:56:17.725517+00:00",
+    "product": "Mobil Telefon",
+    "unit": "Wall Mural",
+    "location": {
+      "latitude": 40.9792,
+      "longitude": 28.7214417
+    },
+    "camp_end_date": "2024-04-24T22:56:17.725517+00:00"
+  },
+  {
+    "brands": "Maybelline",
+    "camp_start_date": "2024-03-24T22:55:46.638261+00:00",
+    "product": "Makyaj Malzemeleri",
+    "unit": "Hoarding",
+    "location": {
+      "latitude": 41.0604,
+      "longitude": 28.9878272
+    },
+    "camp_end_date": "2024-05-01T22:55:46.638261+00:00"
+  },
+  {
+    "brands": "LG",
+    "camp_start_date": "2024-04-17T22:56:23.654763+00:00",
+    "product": "Klima",
+    "unit": "Banner",
+    "location": {
+      "latitude": 41.0133,
+      "longitude": 28.6489262
+    },
+    "camp_end_date": "2024-05-18T22:56:23.654763+00:00"
+  },
+  {
+    "brands": "Ülker",
+    "camp_start_date": "2024-04-18T22:56:24.840784+00:00",
+    "product": "Bisküvi",
+    "unit": "Bus Shelter",
+    "location": {
+      "latitude": 41.0717,
+      "longitude": 28.9646432
+    },
+    "camp_end_date": "2024-05-02T22:56:24.840784+00:00"
+  },
+  {
+    "brands": "Ülker",
+    "camp_start_date": "2024-04-14T22:56:18.666782+00:00",
+    "product": "Süt Ürünleri",
+    "unit": "Display",
+    "location": {
+      "latitude": 40.9903,
+      "longitude": 29.0205482
+    },
+    "camp_end_date": "2024-05-20T22:56:18.666782+00:00"
+  },
+  {
+    "brands": "Eti",
+    "camp_start_date": "2024-04-19T22:55:31.770951+00:00",
+    "product": "Bisküvi",
+    "unit": "Wall Mural",
+    "location": {
+      "latitude": 41.0837,
+      "longitude": 28.8169342
+    },
+    "camp_end_date": "2024-05-15T22:55:31.770951+00:00"
+  },
+  {
+    "brands": "Arçelik",
+    "camp_start_date": "2024-03-29T22:55:17.938628+00:00",
+    "product": "Bulaşık Makinesi",
+    "unit": "Window Graphic",
+    "location": {
+      "latitude": 41.1749,
+      "longitude": 29.609632
+    },
+    "camp_end_date": "2024-05-13T22:55:17.938628+00:00"
+  },
+  {
+    "brands": "Samsung",
+    "camp_start_date": "2024-04-07T22:55:06.374333+00:00",
+    "product": "Tablet",
+    "unit": "Kiosk",
+    "location": {
+      "latitude": 40.9684,
+      "longitude": 29.2620315
+    },
+    "camp_end_date": "2024-05-16T22:55:06.374333+00:00"
+  },
+  {
+    "brands": "Lavşa",
+    "camp_start_date": "2024-03-22T22:56:23.415241+00:00",
+    "product": "Banyo Ürünleri",
+    "unit": "Transit Ad",
+    "location": {
+      "latitude": 40.9339,
+      "longitude": 29.1650476
+    },
+    "camp_end_date": "2024-04-27T22:56:23.415241+00:00"
+  },
+  {
+    "brands": "Nivea",
+    "camp_start_date": "2024-04-05T22:55:22.633875+00:00",
+    "product": "Güneş Kremleri",
+    "unit": "bilboard",
+    "location": {
+      "latitude": 40.991,
+      "longitude": 28.8968287
+    },
+    "camp_end_date": "2024-05-08T22:55:22.633875+00:00"
+  },
+  {
+    "brands": "LG",
+    "camp_start_date": "2024-04-09T22:56:11.134247+00:00",
+    "product": "Klima",
+    "unit": "LED Sign",
+    "location": {
+      "latitude": 41.009,
+      "longitude": 29.2109329
+    },
+    "camp_end_date": "2024-05-08T22:56:11.134247+00:00"
+  },
+  {
+    "brands": "L'Oreal",
+    "camp_start_date": "2024-03-26T22:55:56.805987+00:00",
+    "product": "Makyaj Malzemeleri",
+    "unit": "Transit Ad",
+    "location": {
+      "latitude": 41.0133,
+      "longitude": 28.6489262
+    },
+    "camp_end_date": "2024-05-06T22:55:56.805987+00:00"
+  },
+  {
+    "brands": "Nivea",
+    "camp_start_date": "2024-03-25T22:55:33.872948+00:00",
+    "product": "Güneş Kremleri",
+    "unit": "Kiosk",
+    "location": {
+      "latitude": 40.9339,
+      "longitude": 29.1650476
+    },
+    "camp_end_date": "2024-04-24T22:55:33.872948+00:00"
+  },
+  {
+    "brands": "Arçelik",
+    "camp_start_date": "2024-04-03T22:56:22.047700+00:00",
+    "product": "Buzdolabı",
+    "unit": "Display",
+    "location": {
+      "latitude": 40.9903,
+      "longitude": 29.0205482
+    },
+    "camp_end_date": "2024-05-14T22:56:22.047700+00:00"
+  },
+  {
+    "brands": "Altınbaş",
+    "camp_start_date": "2024-04-12T22:55:15.654162+00:00",
+    "product": "Altın Takılar",
+    "unit": "Banner",
+    "location": {
+      "latitude": 41.0412,
+      "longitude": 28.6939686
+    },
+    "camp_end_date": "2024-05-11T22:55:15.654162+00:00"
+  },
+  {
+    "brands": "L'Oreal",
+    "camp_start_date": "2024-04-09T22:55:26.330454+00:00",
+    "product": "Saç Bakım Ürünleri",
+    "unit": "Poster",
+    "location": {
+      "latitude": 41.0349,
+      "longitude": 28.9122269
+    },
+    "camp_end_date": "2024-04-24T22:55:26.330454+00:00"
+  },
+  {
+    "brands": "Ray-Ban",
+    "camp_start_date": "2024-04-08T22:42:48.509913+00:00",
+    "product": "Güneş Gözlükleri",
+    "unit": "Monument Sign",
+    "location": {
+      "latitude": 40.8747,
+      "longitude": 29.129416
+    },
+    "camp_end_date": "2024-04-24T22:42:48.509913+00:00"
+  },
+  {
+    "brands": "Adidas",
+    "camp_start_date": "2024-04-06T22:56:12.744957+00:00",
+    "product": "Şapka",
+    "unit": "bilboard",
+    "location": {
+      "latitude": 41.0412,
+      "longitude": 28.6939686
+    },
+    "camp_end_date": "2024-05-08T22:56:12.744957+00:00"
+  },
+  {
+    "brands": "L'Oreal",
+    "camp_start_date": "2024-04-15T22:55:59.545229+00:00",
+    "product": "Saç Bakım Ürünleri",
+    "unit": "Monument Sign",
+    "location": {
+      "latitude": 41.0717,
+      "longitude": 28.9646432
+    },
+    "camp_end_date": "2024-05-02T22:55:59.545229+00:00"
+  },
+  {
+    "brands": "Dalan",
+    "camp_start_date": "2024-04-08T22:55:28.967453+00:00",
+    "product": "Saç Kremleri",
+    "unit": "Standee",
+    "location": {
+      "latitude": 40.9977,
+      "longitude": 28.8506599
+    },
+    "camp_end_date": "2024-04-29T22:55:28.967453+00:00"
+  },
+  {
+    "brands": "Elidor",
+    "camp_start_date": "2024-03-30T22:55:54.040681+00:00",
+    "product": "Şampuanlar",
+    "unit": "Pylon",
+    "location": {
+      "latitude": 40.9792,
+      "longitude": 28.7214417
+    },
+    "camp_end_date": "2024-04-23T22:55:54.040681+00:00"
+  },
+  {
+    "brands": "Kütahya Porselen",
+    "camp_start_date": "2024-03-27T22:55:21.705782+00:00",
+    "product": "Porselen Takımlar",
+    "unit": "LED Sign",
+    "location": {
+      "latitude": 41.1421,
+      "longitude": 28.457567
+    },
+    "camp_end_date": "2024-04-23T22:55:21.705782+00:00"
+  },
+  {
+    "brands": "Lavşa",
+    "camp_start_date": "2024-03-29T22:56:13.443955+00:00",
+    "product": "Banyo Ürünleri",
+    "unit": "Neon Sign",
+    "location": {
+      "latitude": 40.9792,
+      "longitude": 28.7214417
+    },
+    "camp_end_date": "2024-05-11T22:56:13.443955+00:00"
+  },
+  {
+    "brands": "Elidor",
+    "camp_start_date": "2024-03-27T22:55:24.222672+00:00",
+    "product": "Saç Boyaları",
+    "unit": "bilboard",
+    "location": {
+      "latitude": 41.0717,
+      "longitude": 28.9646432
+    },
+    "camp_end_date": "2024-05-05T22:55:24.222672+00:00"
+  },
+  {
+    "brands": "Samsung",
+    "camp_start_date": "2024-04-18T22:55:39.471907+00:00",
+    "product": "Televizyon",
+    "unit": "Window Graphic",
+    "location": {
+      "latitude": 41.0542,
+      "longitude": 28.8676458
+    },
+    "camp_end_date": "2024-05-01T22:55:39.471907+00:00"
+  },
+  {
+    "brands": "Taş Pınar",
+    "camp_start_date": "2024-03-27T22:55:20.517781+00:00",
+    "product": "Yastık",
+    "unit": "Monument Sign",
+    "location": {
+      "latitude": 41.0338,
+      "longitude": 29.1013674
+    },
+    "camp_end_date": "2024-05-18T22:55:20.517781+00:00"
+  },
+  {
+    "brands": "LG",
+    "camp_start_date": "2024-03-29T22:55:45.735662+00:00",
+    "product": "Klima",
+    "unit": "Signage",
+    "location": {
+      "latitude": 41.0133,
+      "longitude": 28.6489262
+    },
+    "camp_end_date": "2024-05-11T22:55:45.735662+00:00"
+  },
+  {
+    "brands": "LG",
+    "camp_start_date": "2024-03-31T22:55:16.761624+00:00",
+    "product": "Mobil Telefon",
+    "unit": "Monument Sign",
+    "location": {
+      "latitude": 41.0576,
+      "longitude": 28.9153498
+    },
+    "camp_end_date": "2024-04-25T22:55:16.761624+00:00"
+  },
+  {
+    "brands": "IKEA",
+    "camp_start_date": "2024-03-30T22:55:51.248581+00:00",
+    "product": "Ev Eşyaları",
+    "unit": "Panel",
+    "location": {
+      "latitude": 40.991,
+      "longitude": 28.8968287
+    },
+    "camp_end_date": "2024-05-07T22:55:51.248581+00:00"
+  },
+  {
+    "brands": "Adidas",
+    "camp_start_date": "2024-03-23T22:55:29.214403+00:00",
+    "product": "Tişört",
+    "unit": "Neon Sign",
+    "location": {
+      "latitude": 41.0323,
+      "longitude": 29.169522
+    },
+    "camp_end_date": "2024-05-11T22:55:29.214403+00:00"
+  },
+  {
+    "brands": "Elidor",
+    "camp_start_date": "2024-04-12T22:55:25.400528+00:00",
+    "product": "Saç Kremleri",
+    "unit": "Wall Mural",
+    "location": {
+      "latitude": 41.0133,
+      "longitude": 28.6489262
+    },
+    "camp_end_date": "2024-05-08T22:55:25.400528+00:00"
+  },
+  {
+    "brands": "Huawei",
+    "camp_start_date": "2024-04-16T22:55:48.479472+00:00",
+    "product": "Tablet",
+    "unit": "LED Sign",
+    "location": {
+      "latitude": 40.8747,
+      "longitude": 29.129416
+    },
+    "camp_end_date": "2024-05-07T22:55:48.479472+00:00"
+  },
+  {
+    "brands": "Taş Pınar",
+    "camp_start_date": "2024-04-11T22:55:49.703516+00:00",
+    "product": "Yatak",
+    "unit": "bilboard",
+    "location": {
+      "latitude": 40.9833,
+      "longitude": 29.1278408
+    },
+    "camp_end_date": "2024-04-28T22:55:49.703516+00:00"
+  },
+  {
+    "brands": "Kütahya Porselen",
+    "camp_start_date": "2024-04-12T22:56:15.122879+00:00",
+    "product": "Porselen Takımlar",
+    "unit": "Kiosk",
+    "location": {
+      "latitude": 41.1421,
+      "longitude": 28.457567
+    },
+    "camp_end_date": "2024-05-08T22:56:15.122879+00:00"
+  },
+  {
+    "brands": "Levi's",
+    "camp_start_date": "2024-04-18T22:55:08.487334+00:00",
+    "product": "Kot Pantolonlar",
+    "unit": "LED Sign",
+    "location": {
+      "latitude": 40.9804,
+      "longitude": 28.8724221
+    },
+    "camp_end_date": "2024-05-20T22:55:08.487334+00:00"
+  },
+  {
+    "brands": "Samsung",
+    "camp_start_date": "2024-04-19T22:56:24.125308+00:00",
+    "product": "Mobil Telefon",
+    "unit": "Kiosk",
+    "location": {
+      "latitude": 41.0341,
+      "longitude": 28.8330754
+    },
+    "camp_end_date": "2024-05-01T22:56:24.125308+00:00"
+  },
+  {
+    "brands": "Taş Pınar",
+    "camp_start_date": "2024-03-24T22:56:19.129671+00:00",
+    "product": "Yastık",
+    "unit": "Mobile Billboard",
+    "location": {
+      "latitude": 40.8747,
+      "longitude": 29.129416
+    },
+    "camp_end_date": "2024-05-15T22:56:19.129671+00:00"
+  },
+  {
+    "brands": "L'Oreal",
+    "camp_start_date": "2024-04-17T22:56:06.402894+00:00",
+    "product": "Saç Bakım Ürünleri",
+    "unit": "Transit Ad",
+    "location": {
+      "latitude": 40.9804,
+      "longitude": 28.5854223
+    },
+    "camp_end_date": "2024-04-29T22:56:06.402894+00:00"
+  },
+  {
+    "brands": "Apple",
+    "camp_start_date": "2024-04-15T22:55:08.225332+00:00",
+    "product": "Mobil Telefon",
+    "unit": "Window Graphic",
+    "location": {
+      "latitude": 41.009,
+      "longitude": 29.2109329
+    },
+    "camp_end_date": "2024-05-11T22:55:08.225332+00:00"
+  },
+  {
+    "brands": "Şekerbank",
+    "camp_start_date": "2024-04-16T22:56:10.362927+00:00",
+    "product": "Lokum",
+    "unit": "Monument Sign",
+    "location": {
+      "latitude": 41.0092,
+      "longitude": 28.7757748
+    },
+    "camp_end_date": "2024-04-21T22:56:10.362927+00:00"
+  },
+  {
+    "brands": "Adidas",
+    "camp_start_date": "2024-03-25T22:55:28.253453+00:00",
+    "product": "Spor Ayakkabı",
+    "unit": "Standee",
+    "location": {
+      "latitude": 41.1421,
+      "longitude": 28.457567
+    },
+    "camp_end_date": "2024-05-14T22:55:28.253453+00:00"
+  },
+  {
+    "brands": "IKEA",
+    "camp_start_date": "2024-04-03T22:56:07.331895+00:00",
+    "product": "Ev Eşyaları",
+    "unit": "Poster",
+    "location": {
+      "latitude": 41.0341,
+      "longitude": 28.8330754
+    },
+    "camp_end_date": "2024-05-03T22:56:07.331895+00:00"
+  },
+  {
+    "brands": "Adidas",
+    "camp_start_date": "2024-04-08T22:55:13.828142+00:00",
+    "product": "Tişört",
+    "unit": "Transit Ad",
+    "location": {
+      "latitude": 41.0323,
+      "longitude": 29.169522
+    },
+    "camp_end_date": "2024-05-20T22:55:13.828142+00:00"
+  },
+  {
+    "brands": "IKEA",
+    "camp_start_date": "2024-04-01T22:55:50.322545+00:00",
+    "product": "Ev Eşyaları",
+    "unit": "Poster",
+    "location": {
+      "latitude": 41.0133,
+      "longitude": 28.6489262
+    },
+    "camp_end_date": "2024-05-10T22:55:50.322545+00:00"
+  },
+  {
+    "brands": "Adidas",
+    "camp_start_date": "2024-03-28T22:56:19.589755+00:00",
+    "product": "Spor Ayakkabı",
+    "unit": "Window Graphic",
+    "location": {
+      "latitude": 41.0412,
+      "longitude": 28.6939686
+    },
+    "camp_end_date": "2024-05-10T22:56:19.589755+00:00"
+  },
+  {
+    "brands": "Elidor",
+    "camp_start_date": "2024-03-31T22:55:26.081533+00:00",
+    "product": "Saç Boyaları",
+    "unit": "Banner",
+    "location": {
+      "latitude": 41.1664,
+      "longitude": 29.0500337
+    },
+    "camp_end_date": "2024-04-29T22:55:26.081533+00:00"
+  },
+  {
+    "brands": "Adidas",
+    "camp_start_date": "2024-04-03T22:56:22.288665+00:00",
+    "product": "Şort",
+    "unit": "Kiosk",
+    "location": {
+      "latitude": 40.991,
+      "longitude": 28.8968287
+    },
+    "camp_end_date": "2024-05-18T22:56:22.288665+00:00"
+  },
+  {
+    "brands": "H&M",
+    "camp_start_date": "2024-04-05T22:56:13.219958+00:00",
+    "product": "Çocuk Giyim",
+    "unit": "Mobile Billboard",
+    "location": {
+      "latitude": 41.1421,
+      "longitude": 28.457567
+    },
+    "camp_end_date": "2024-05-04T22:56:13.219958+00:00"
+  },
+  {
+    "brands": "Samsung",
+    "camp_start_date": "2024-04-16T22:56:07.906894+00:00",
+    "product": "Televizyon",
+    "unit": "LED Sign",
+    "location": {
+      "latitude": 41.0576,
+      "longitude": 28.9153498
+    },
+    "camp_end_date": "2024-05-19T22:56:07.906894+00:00"
+  },
+  {
+    "brands": "L'Oreal",
+    "camp_start_date": "2024-03-25T22:55:49.397514+00:00",
+    "product": "Makyaj Malzemeleri",
+    "unit": "Hoarding",
+    "location": {
+      "latitude": 40.9804,
+      "longitude": 28.5854223
+    },
+    "camp_end_date": "2024-05-01T22:55:49.397514+00:00"
+  },
+  {
+    "brands": "Nestlé",
+    "camp_start_date": "2024-04-02T22:55:27.942454+00:00",
+    "product": "Nescafé Kahve",
+    "unit": "Poster",
+    "location": {
+      "latitude": 41.0371,
+      "longitude": 28.9774241
+    },
+    "camp_end_date": "2024-04-26T22:55:27.942454+00:00"
+  },
+  {
+    "brands": "Nestlé",
+    "camp_start_date": "2024-04-06T22:42:53.865990+00:00",
+    "product": "Maggi Erişte",
+    "unit": "Display",
+    "location": {
+      "latitude": 40.9804,
+      "longitude": 28.8724221
+    },
+    "camp_end_date": "2024-05-15T22:42:53.865990+00:00"
+  },
+  {
+    "brands": "Coca-Cola",
+    "camp_start_date": "2024-04-03T22:42:53.256262+00:00",
+    "product": "Fanta",
+    "unit": "Bus Shelter",
+    "location": {
+      "latitude": 41.1664,
+      "longitude": 29.0500337
+    },
+    "camp_end_date": "2024-05-18T22:42:53.256262+00:00"
+  },
+  {
+    "brands": "IKEA",
+    "camp_start_date": "2024-04-17T22:55:35.493948+00:00",
+    "product": "Mobilya",
+    "unit": "Mobile Billboard",
+    "location": {
+      "latitude": 41.0412,
+      "longitude": 28.6939686
+    },
+    "camp_end_date": "2024-04-29T22:55:35.493948+00:00"
+  },
+  {
+    "brands": "Dyson",
+    "camp_start_date": "2024-04-13T22:55:48.777502+00:00",
+    "product": "Elektrikli Süpürgeler",
+    "unit": "LED Sign",
+    "location": {
+      "latitude": 41.0412,
+      "longitude": 28.6939686
+    },
+    "camp_end_date": "2024-05-10T22:55:48.777502+00:00"
+  },
+  {
+    "brands": "Dalan",
+    "camp_start_date": "2024-04-10T22:55:27.327453+00:00",
+    "product": "Vücut Losyonları",
+    "unit": "Kiosk",
+    "location": {
+      "latitude": 41.0203,
+      "longitude": 28.9339419
+    },
+    "camp_end_date": "2024-05-12T22:55:27.327453+00:00"
+  },
+  {
+    "brands": "Levi's",
+    "camp_start_date": "2024-03-24T22:56:20.564326+00:00",
+    "product": "Kot Pantolonlar",
+    "unit": "Display",
+    "location": {
+      "latitude": 41.1271,
+      "longitude": 29.0978248
+    },
+    "camp_end_date": "2024-05-02T22:56:20.564326+00:00"
+  },
+  {
+    "brands": "L'Oreal",
+    "camp_start_date": "2024-03-29T22:55:42.283629+00:00",
+    "product": "Makyaj Malzemeleri",
+    "unit": "Wall Mural",
+    "location": {
+      "latitude": 41.1749,
+      "longitude": 29.609632
+    },
+    "camp_end_date": "2024-04-24T22:55:42.283629+00:00"
+  },
+  {
+    "brands": "Maybelline",
+    "camp_start_date": "2024-03-30T22:55:37.363004+00:00",
+    "product": "Makyaj Malzemeleri",
+    "unit": "Bus Shelter",
+    "location": {
+      "latitude": 40.9684,
+      "longitude": 29.2620315
+    },
+    "camp_end_date": "2024-05-14T22:55:37.363004+00:00"
+  },
+  {
+    "brands": "Huawei",
+    "camp_start_date": "2024-04-10T22:56:02.343894+00:00",
+    "product": "Mobil Telefon",
+    "unit": "Mobile Billboard",
+    "location": {
+      "latitude": 41.0717,
+      "longitude": 28.9646432
+    },
+    "camp_end_date": "2024-05-15T22:56:02.343894+00:00"
+  },
+  {
+    "brands": "Heinz",
+    "camp_start_date": "2024-04-06T22:56:23.891836+00:00",
+    "product": "Mayonez",
+    "unit": "Wall Mural",
+    "location": {
+      "latitude": 41.009,
+      "longitude": 29.2109329
+    },
+    "camp_end_date": "2024-05-12T22:56:23.891836+00:00"
+  },
+  {
+    "brands": "H&M",
+    "camp_start_date": "2024-04-15T22:56:25.076784+00:00",
+    "product": "Kadın Giyim",
+    "unit": "Window Graphic",
+    "location": {
+      "latitude": 40.9804,
+      "longitude": 28.8724221
+    },
+    "camp_end_date": "2024-05-16T22:56:25.076784+00:00"
+  },
+  {
+    "brands": "Maybelline",
+    "camp_start_date": "2024-03-23T22:56:21.806667+00:00",
+    "product": "Makyaj Malzemeleri",
+    "unit": "Wall Mural",
+    "location": {
+      "latitude": 40.8999,
+      "longitude": 29.193645
+    },
+    "camp_end_date": "2024-05-20T22:56:21.806667+00:00"
+  },
+  {
+    "brands": "Ray-Ban",
+    "camp_start_date": "2024-04-16T22:56:03.615894+00:00",
+    "product": "Güneş Gözlükleri",
+    "unit": "Digital Screen",
+    "location": {
+      "latitude": 41.009,
+      "longitude": 29.2109329
+    },
+    "camp_end_date": "2024-04-30T22:56:03.615894+00:00"
+  },
+  {
+    "brands": "Levi's",
+    "camp_start_date": "2024-04-01T22:56:15.838875+00:00",
+    "product": "Kot Pantolonlar",
+    "unit": "Window Graphic",
+    "location": {
+      "latitude": 40.8144,
+      "longitude": 29.3094221
+    },
+    "camp_end_date": "2024-05-18T22:56:15.838875+00:00"
+  },
+  {
+    "brands": "H&M",
+    "camp_start_date": "2024-04-16T22:42:52.949510+00:00",
+    "product": "Kadın Giyim",
+    "unit": "Display",
+    "location": {
+      "latitude": 41.0604,
+      "longitude": 28.9878272
+    },
+    "camp_end_date": "2024-04-25T22:42:52.949510+00:00"
+  },
+  {
+    "brands": "Dalan",
+    "camp_start_date": "2024-04-17T22:56:11.764246+00:00",
+    "product": "Saç Kremleri",
+    "unit": "Kiosk",
+    "location": {
+      "latitude": 40.9804,
+      "longitude": 28.8724221
+    },
+    "camp_end_date": "2024-05-14T22:56:11.764246+00:00"
+  },
+  {
+    "brands": "LG",
+    "camp_start_date": "2024-03-21T22:55:55.886435+00:00",
+    "product": "Televizyon",
+    "unit": "Banner",
+    "location": {
+      "latitude": 40.8144,
+      "longitude": 29.3094221
+    },
+    "camp_end_date": "2024-05-13T22:55:55.886435+00:00"
+  },
+  {
+    "brands": "Taş Pınar",
+    "camp_start_date": "2024-03-27T22:42:50.339957+00:00",
+    "product": "Yastık",
+    "unit": "Poster",
+    "location": {
+      "latitude": 40.991,
+      "longitude": 28.8968287
+    },
+    "camp_end_date": "2024-05-01T22:42:50.339957+00:00"
+  },
+  {
+    "brands": "Kütahya Porselen",
+    "camp_start_date": "2024-04-05T22:56:21.100329+00:00",
+    "product": "Porselen Takımlar",
+    "unit": "Bus Shelter",
+    "location": {
+      "latitude": 40.8999,
+      "longitude": 29.193645
+    },
+    "camp_end_date": "2024-05-19T22:56:21.100329+00:00"
+  },
+  {
+    "brands": "Derimod",
+    "camp_start_date": "2024-04-05T22:56:09.175952+00:00",
+    "product": "Cüzdan",
+    "unit": "Hoarding",
+    "location": {
+      "latitude": 41.0349,
+      "longitude": 28.9122269
+    },
+    "camp_end_date": "2024-04-30T22:56:09.175952+00:00"
+  },
+  {
+    "brands": "Ülker",
+    "camp_start_date": "2024-04-11T22:56:10.883981+00:00",
+    "product": "Süt Ürünleri",
+    "unit": "Pylon",
+    "location": {
+      "latitude": 40.9977,
+      "longitude": 28.8506599
+    },
+    "camp_end_date": "2024-04-23T22:56:10.883981+00:00"
+  },
+  {
+    "brands": "LC Waikiki",
+    "camp_start_date": "2024-03-31T22:56:22.511670+00:00",
+    "product": "Kadın Giyim",
+    "unit": "Kiosk",
+    "location": {
+      "latitude": 41.1749,
+      "longitude": 29.609632
+    },
+    "camp_end_date": "2024-05-17T22:56:22.511670+00:00"
+  },
+  {
+    "brands": "Elidor",
+    "camp_start_date": "2024-03-26T22:56:16.549110+00:00",
+    "product": "Saç Kremleri",
+    "unit": "Panel",
+    "location": {
+      "latitude": 40.8747,
+      "longitude": 29.129416
+    },
+    "camp_end_date": "2024-04-24T22:56:16.549110+00:00"
+  },
+  {
+    "brands": "LG",
+    "camp_start_date": "2024-03-23T22:56:17.966549+00:00",
+    "product": "Klima",
+    "unit": "Kiosk",
+    "location": {
+      "latitude": 41.0092,
+      "longitude": 28.7757748
+    },
+    "camp_end_date": "2024-05-13T22:56:17.966549+00:00"
+  },
+  {
+    "brands": "Derimod",
+    "camp_start_date": "2024-04-12T22:55:53.421681+00:00",
+    "product": "Cüzdan",
+    "unit": "Digital Screen",
+    "location": {
+      "latitude": 41.0717,
+      "longitude": 28.9646432
+    },
+    "camp_end_date": "2024-04-29T22:55:53.421681+00:00"
+  },
+  {
+    "brands": "Paşabahçe",
+    "camp_start_date": "2024-03-25T22:56:00.815264+00:00",
+    "product": "Cam Eşyalar",
+    "unit": "Pylon",
+    "location": {
+      "latitude": 41.107,
+      "longitude": 28.8714513
+    },
+    "camp_end_date": "2024-05-12T22:56:00.815264+00:00"
+  },
+  {
+    "brands": "Taş Pınar",
+    "camp_start_date": "2024-04-13T22:55:25.154529+00:00",
+    "product": "Yatak",
+    "unit": "Transit Ad",
+    "location": {
+      "latitude": 41.0349,
+      "longitude": 28.9122269
+    },
+    "camp_end_date": "2024-05-10T22:55:25.154529+00:00"
+  },
+  {
+    "brands": "Levi's",
+    "camp_start_date": "2024-04-01T22:55:45.073534+00:00",
+    "product": "Kot Pantolonlar",
+    "unit": "LED Sign",
+    "location": {
+      "latitude": 41.1271,
+      "longitude": 29.0978248
+    },
+    "camp_end_date": "2024-04-26T22:55:45.073534+00:00"
+  },
+  {
+    "brands": "Coca-Cola",
+    "camp_start_date": "2024-04-09T22:55:52.193655+00:00",
+    "product": "Fanta",
+    "unit": "Bus Shelter",
+    "location": {
+      "latitude": 41.0203,
+      "longitude": 28.9339419
+    },
+    "camp_end_date": "2024-04-30T22:55:52.193655+00:00"
+  },
+  {
+    "brands": "Maybelline",
+    "camp_start_date": "2024-03-23T22:55:17.685620+00:00",
+    "product": "Makyaj Malzemeleri",
+    "unit": "Kiosk",
+    "location": {
+      "latitude": 41.0203,
+      "longitude": 28.9339419
+    },
+    "camp_end_date": "2024-05-18T22:55:17.685620+00:00"
+  },
+  {
+    "brands": "Procter & Gamble",
+    "camp_start_date": "2024-03-22T22:56:18.202780+00:00",
+    "product": "Oral-B Diş Fırçaları",
+    "unit": "Monument Sign",
+    "location": {
+      "latitude": 40.9833,
+      "longitude": 29.1278408
+    },
+    "camp_end_date": "2024-05-01T22:56:18.202780+00:00"
+  },
+  {
+    "brands": "Dyson",
+    "camp_start_date": "2024-03-30T22:56:13.679960+00:00",
+    "product": "Elektrikli Süpürgeler",
+    "unit": "Signage",
+    "location": {
+      "latitude": 41.1421,
+      "longitude": 28.457567
+    },
+    "camp_end_date": "2024-05-09T22:56:13.679960+00:00"
+  },
+  {
+    "brands": "Heinz",
+    "camp_start_date": "2024-04-14T22:55:59.888310+00:00",
+    "product": "Ketçap",
+    "unit": "Banner",
+    "location": {
+      "latitude": 40.991,
+      "longitude": 28.8968287
+    },
+    "camp_end_date": "2024-05-05T22:55:59.888310+00:00"
+  },
+  {
+    "brands": "Eti",
+    "camp_start_date": "2024-04-16T22:56:16.791530+00:00",
+    "product": "Süt Ürünleri",
+    "unit": "Panel",
+    "location": {
+      "latitude": 41.0203,
+      "longitude": 28.9339419
+    },
+    "camp_end_date": "2024-05-01T22:56:16.791530+00:00"
+  },
+  {
+    "brands": "H&M",
+    "camp_start_date": "2024-03-26T22:56:12.005270+00:00",
+    "product": "Erkek Giyim",
+    "unit": "LED Sign",
+    "location": {
+      "latitude": 41.107,
+      "longitude": 28.8714513
+    },
+    "camp_end_date": "2024-05-20T22:56:12.005270+00:00"
+  },
+  {
+    "brands": "Kütahya Porselen",
+    "camp_start_date": "2024-03-28T22:56:11.373244+00:00",
+    "product": "Porselen Takımlar",
+    "unit": "Monument Sign",
+    "location": {
+      "latitude": 40.8144,
+      "longitude": 29.3094221
+    },
+    "camp_end_date": "2024-04-27T22:56:11.373244+00:00"
+  },
+  {
+    "brands": "Apple",
+    "camp_start_date": "2024-03-25T22:55:53.109681+00:00",
+    "product": "Bilgisayar",
+    "unit": "Display",
+    "location": {
+      "latitude": 40.9804,
+      "longitude": 28.8724221
+    },
+    "camp_end_date": "2024-04-26T22:55:53.109681+00:00"
+  },
+  {
+    "brands": "Ray-Ban",
+    "camp_start_date": "2024-04-09T22:55:54.956694+00:00",
+    "product": "Güneş Gözlükleri",
+    "unit": "Panel",
+    "location": {
+      "latitude": 41.1664,
+      "longitude": 29.0500337
+    },
+    "camp_end_date": "2024-05-08T22:55:54.956694+00:00"
+  },
+  {
+    "brands": "Nivea",
+    "camp_start_date": "2024-03-22T22:56:14.640955+00:00",
+    "product": "Güneş Kremleri",
+    "unit": "bilboard",
+    "location": {
+      "latitude": 41.0604,
+      "longitude": 28.9878272
+    },
+    "camp_end_date": "2024-05-14T22:56:14.640955+00:00"
+  },
+  {
+    "brands": "Levi's",
+    "camp_start_date": "2024-04-08T22:55:22.374882+00:00",
+    "product": "Kot Pantolonlar",
+    "unit": "Bus Shelter",
+    "location": {
+      "latitude": 40.8747,
+      "longitude": 29.129416
+    },
+    "camp_end_date": "2024-04-27T22:55:22.374882+00:00"
+  },
+  {
+    "brands": "Xiaomi",
+    "camp_start_date": "2024-04-06T22:56:05.126893+00:00",
+    "product": "Akıllı Bileklik",
+    "unit": "Pylon",
+    "location": {
+      "latitude": 41.0105,
+      "longitude": 28.8741303
+    },
+    "camp_end_date": "2024-05-05T22:56:05.126893+00:00"
+  },
+  {
+    "brands": "Nestlé",
+    "camp_start_date": "2024-04-11T22:55:32.950949+00:00",
+    "product": "Maggi Erişte",
+    "unit": "Standee",
+    "location": {
+      "latitude": 40.8796,
+      "longitude": 29.2580663
+    },
+    "camp_end_date": "2024-05-04T22:55:32.950949+00:00"
+  },
+  {
+    "brands": "Derimod",
+    "camp_start_date": "2024-04-03T22:55:10.353332+00:00",
+    "product": "Ayakkabı",
+    "unit": "Bus Shelter",
+    "location": {
+      "latitude": 40.8144,
+      "longitude": 29.3094221
+    },
+    "camp_end_date": "2024-04-29T22:55:10.353332+00:00"
+  },
+  {
+    "brands": "Nivea",
+    "camp_start_date": "2024-04-17T22:42:50.084886+00:00",
+    "product": "Güneş Kremleri",
+    "unit": "LED Sign",
+    "location": {
+      "latitude": 40.9684,
+      "longitude": 29.2620315
+    },
+    "camp_end_date": "2024-05-15T22:42:50.084886+00:00"
+  },
+  {
+    "brands": "PepsiCo",
+    "camp_start_date": "2024-04-19T22:55:44.132899+00:00",
+    "product": "7Up",
+    "unit": "Signage",
+    "location": {
+      "latitude": 41.0338,
+      "longitude": 29.1013674
+    },
+    "camp_end_date": "2024-05-12T22:55:44.132899+00:00"
+  },
+  {
+    "brands": "PepsiCo",
+    "camp_start_date": "2024-03-29T22:55:47.545621+00:00",
+    "product": "Pepsi",
+    "unit": "Monument Sign",
+    "location": {
+      "latitude": 41.0542,
+      "longitude": 28.8676458
+    },
+    "camp_end_date": "2024-05-09T22:55:47.545621+00:00"
+  },
+  {
+    "brands": "Procter & Gamble",
+    "camp_start_date": "2024-04-17T22:55:17.011620+00:00",
+    "product": "Pantene Saç Bakım Ürünleri",
+    "unit": "Panel",
+    "location": {
+      "latitude": 41.1749,
+      "longitude": 29.609632
+    },
+    "camp_end_date": "2024-04-29T22:55:17.011620+00:00"
+  },
+  {
+    "brands": "Ray-Ban",
+    "camp_start_date": "2024-04-09T22:55:41.360061+00:00",
+    "product": "Güneş Gözlükleri",
+    "unit": "Window Graphic",
+    "location": {
+      "latitude": 41.0737,
+      "longitude": 28.2479161
+    },
+    "camp_end_date": "2024-05-18T22:55:41.360061+00:00"
+  },
+  {
+    "brands": "Heinz",
+    "camp_start_date": "2024-04-05T22:56:14.879061+00:00",
+    "product": "Ketçap",
+    "unit": "Kiosk",
+    "location": {
+      "latitude": 41.0371,
+      "longitude": 28.9774241
+    },
+    "camp_end_date": "2024-05-15T22:56:14.879061+00:00"
+  },
+  {
+    "brands": "Taş Pınar",
+    "camp_start_date": "2024-04-04T22:55:57.710268+00:00",
+    "product": "Yastık",
+    "unit": "Banner",
+    "location": {
+      "latitude": 40.8144,
+      "longitude": 29.3094221
+    },
+    "camp_end_date": "2024-04-28T22:55:57.710268+00:00"
+  },
+  {
+    "brands": "Derimod",
+    "camp_start_date": "2024-03-30T22:55:43.852011+00:00",
+    "product": "Cüzdan",
+    "unit": "Neon Sign",
+    "location": {
+      "latitude": 41.0092,
+      "longitude": 28.7757748
+    },
+    "camp_end_date": "2024-05-08T22:55:43.852011+00:00"
+  },
+  {
+    "brands": "L'Oreal",
+    "camp_start_date": "2024-04-02T22:55:07.300338+00:00",
+    "product": "Saç Bakım Ürünleri",
+    "unit": "Banner",
+    "location": {
+      "latitude": 41.1864,
+      "longitude": 28.7389225
+    },
+    "camp_end_date": "2024-05-03T22:55:07.300338+00:00"
+  },
+  {
+    "brands": "LC Waikiki",
+    "camp_start_date": "2024-04-09T22:55:46.930257+00:00",
+    "product": "Kadın Giyim",
+    "unit": "Standee",
+    "location": {
+      "latitude": 41.0371,
+      "longitude": 28.9774241
+    },
+    "camp_end_date": "2024-04-28T22:55:46.930257+00:00"
+  },
+  {
+    "brands": "Paşabahçe",
+    "camp_start_date": "2024-03-27T22:55:18.863911+00:00",
+    "product": "Cam Eşyalar",
+    "unit": "Pylon",
+    "location": {
+      "latitude": 41.0092,
+      "longitude": 28.7757748
+    },
+    "camp_end_date": "2024-05-13T22:55:18.863911+00:00"
+  },
+  {
+    "brands": "Çaykur",
+    "camp_start_date": "2024-03-30T22:55:31.096300+00:00",
+    "product": "Yeşil Çay",
+    "unit": "Monument Sign",
+    "location": {
+      "latitude": 40.9804,
+      "longitude": 28.5854223
+    },
+    "camp_end_date": "2024-05-08T22:55:31.096300+00:00"
+  },
+  {
+    "brands": "Samsung",
+    "camp_start_date": "2024-04-11T22:55:41.085096+00:00",
+    "product": "Tablet",
+    "unit": "Mobile Billboard",
+    "location": {
+      "latitude": 41.1749,
+      "longitude": 29.609632
+    },
+    "camp_end_date": "2024-05-07T22:55:41.085096+00:00"
+  },
+  {
+    "brands": "Paşabahçe",
+    "camp_start_date": "2024-03-27T22:55:44.782509+00:00",
+    "product": "Cam Eşyalar",
+    "unit": "Hoarding",
+    "location": {
+      "latitude": 41.0576,
+      "longitude": 28.9153498
+    },
+    "camp_end_date": "2024-05-08T22:55:44.782509+00:00"
+  },
+  {
+    "brands": "Taş Pınar",
+    "camp_start_date": "2024-03-23T22:56:14.137958+00:00",
+    "product": "Yastık",
+    "unit": "Signage",
+    "location": {
+      "latitude": 41.0105,
+      "longitude": 28.8741303
+    },
+    "camp_end_date": "2024-04-30T22:56:14.137958+00:00"
+  },
+  {
+    "brands": "Paşabahçe",
+    "camp_start_date": "2024-03-25T22:55:19.821430+00:00",
+    "product": "Cam Eşyalar",
+    "unit": "Neon Sign",
+    "location": {
+      "latitude": 41.0551,
+      "longitude": 28.9346367
+    },
+    "camp_end_date": "2024-05-17T22:55:19.821430+00:00"
+  },
+  {
+    "brands": "Çaykur",
+    "camp_start_date": "2024-03-22T22:56:21.563347+00:00",
+    "product": "Yeşil Çay",
+    "unit": "Poster",
+    "location": {
+      "latitude": 40.9339,
+      "longitude": 29.1650476
+    },
+    "camp_end_date": "2024-04-24T22:56:21.563347+00:00"
+  },
+  {
+    "brands": "Çaykur",
+    "camp_start_date": "2024-03-23T22:55:41.999063+00:00",
+    "product": "Siyah Çay",
+    "unit": "Display",
+    "location": {
+      "latitude": 41.0203,
+      "longitude": 28.9339419
+    },
+    "camp_end_date": "2024-04-22T22:55:41.999063+00:00"
+  },
+  {
+    "brands": "H&M",
+    "camp_start_date": "2024-04-07T22:55:32.706953+00:00",
+    "product": "Kadın Giyim",
+    "unit": "LED Sign",
+    "location": {
+      "latitude": 41.0604,
+      "longitude": 28.9878272
+    },
+    "camp_end_date": "2024-04-21T22:55:32.706953+00:00"
+  },
+  {
+    "brands": "LG",
+    "camp_start_date": "2024-03-21T22:55:15.950161+00:00",
+    "product": "Mobil Telefon",
+    "unit": "Signage",
+    "location": {
+      "latitude": 40.991,
+      "longitude": 28.8968287
+    },
+    "camp_end_date": "2024-04-24T22:55:15.950161+00:00"
+  },
+  {
+    "brands": "Lavşa",
+    "camp_start_date": "2024-03-24T22:42:51.950235+00:00",
+    "product": "Banyo Ürünleri",
+    "unit": "Window Graphic",
+    "location": {
+      "latitude": 41.0341,
+      "longitude": 28.8330754
+    },
+    "camp_end_date": "2024-05-12T22:42:51.950235+00:00"
+  },
+  {
+    "brands": "Huawei",
+    "camp_start_date": "2024-04-03T22:56:20.056028+00:00",
+    "product": "Kulaklık",
+    "unit": "Display",
+    "location": {
+      "latitude": 41.1749,
+      "longitude": 29.609632
+    },
+    "camp_end_date": "2024-05-12T22:56:20.056028+00:00"
+  },
+  {
+    "brands": "Xiaomi",
+    "camp_start_date": "2024-04-03T22:55:36.434948+00:00",
+    "product": "Mobil Telefon",
+    "unit": "Kiosk",
+    "location": {
+      "latitude": 41.0323,
+      "longitude": 29.169522
+    },
+    "camp_end_date": "2024-05-19T22:55:36.434948+00:00"
+  },
+  {
+    "brands": "Procter & Gamble",
+    "camp_start_date": "2024-04-16T22:55:35.743948+00:00",
+    "product": "Gillette Traş Bıçakları",
+    "unit": "Mobile Billboard",
+    "location": {
+      "latitude": 40.9804,
+      "longitude": 28.5854223
+    },
+    "camp_end_date": "2024-04-27T22:55:35.743948+00:00"
+  },
+  {
+    "brands": "LG",
+    "camp_start_date": "2024-04-12T22:55:42.927846+00:00",
+    "product": "Mobil Telefon",
+    "unit": "Standee",
+    "location": {
+      "latitude": 41.0105,
+      "longitude": 28.8741303
+    },
+    "camp_end_date": "2024-05-06T22:55:42.927846+00:00"
+  },
+  {
+    "brands": "LC Waikiki",
+    "camp_start_date": "2024-03-28T22:56:12.981978+00:00",
+    "product": "Çocuk Giyim",
+    "unit": "Wall Mural",
+    "location": {
+      "latitude": 41.1749,
+      "longitude": 29.609632
+    },
+    "camp_end_date": "2024-04-23T22:56:12.981978+00:00"
+  },
+  {
+    "brands": "Huawei",
+    "camp_start_date": "2024-04-19T22:56:01.410196+00:00",
+    "product": "Kulaklık",
+    "unit": "Kiosk",
+    "location": {
+      "latitude": 41.0371,
+      "longitude": 28.9774241
+    },
+    "camp_end_date": "2024-05-10T22:56:01.410196+00:00"
+  },
+  {
+    "brands": "Derimod",
+    "camp_start_date": "2024-04-13T22:56:17.501518+00:00",
+    "product": "Ayakkabı",
+    "unit": "Digital Screen",
+    "location": {
+      "latitude": 40.9977,
+      "longitude": 28.8506599
+    },
+    "camp_end_date": "2024-05-02T22:56:17.501518+00:00"
+  },
+  {
+    "brands": "Paşabahçe",
+    "camp_start_date": "2024-03-31T22:55:36.682948+00:00",
+    "product": "Cam Eşyalar",
+    "unit": "Signage",
+    "location": {
+      "latitude": 41.107,
+      "longitude": 28.8714513
+    },
+    "camp_end_date": "2024-05-20T22:55:36.682948+00:00"
+  },
+  {
+    "brands": "Adidas",
+    "camp_start_date": "2024-04-19T22:55:57.127268+00:00",
+    "product": "Tişört",
+    "unit": "Wall Mural",
+    "location": {
+      "latitude": 41.0327,
+      "longitude": 29.0319534
+    },
+    "camp_end_date": "2024-04-22T22:55:57.127268+00:00"
+  },
+  {
+    "brands": "Elidor",
+    "camp_start_date": "2024-04-04T22:55:58.631244+00:00",
+    "product": "Saç Kremleri",
+    "unit": "Poster",
+    "location": {
+      "latitude": 41.0441,
+      "longitude": 29.0017188
+    },
+    "camp_end_date": "2024-05-14T22:55:58.631244+00:00"
+  },
+  {
+    "brands": "Samsung",
+    "camp_start_date": "2024-04-10T22:56:13.900956+00:00",
+    "product": "Mobil Telefon",
+    "unit": "Poster",
+    "location": {
+      "latitude": 41.0092,
+      "longitude": 28.7757748
+    },
+    "camp_end_date": "2024-05-03T22:56:13.900956+00:00"
+  },
+  {
+    "brands": "Xiaomi",
+    "camp_start_date": "2024-04-03T22:55:11.970187+00:00",
+    "product": "Mobil Telefon",
+    "unit": "Kiosk",
+    "location": {
+      "latitude": 41.0604,
+      "longitude": 28.9878272
+    },
+    "camp_end_date": "2024-05-15T22:55:11.970187+00:00"
+  },
+  {
+    "brands": "Dalan",
+    "camp_start_date": "2024-04-06T22:55:15.020163+00:00",
+    "product": "Vücut Losyonları",
+    "unit": "Transit Ad",
+    "location": {
+      "latitude": 40.8144,
+      "longitude": 29.3094221
+    },
+    "camp_end_date": "2024-04-21T22:55:15.020163+00:00"
+  },
+  {
+    "brands": "Corelle",
+    "camp_start_date": "2024-04-06T22:55:09.417335+00:00",
+    "product": "Yemek Takımları",
+    "unit": "Panel",
+    "location": {
+      "latitude": 41.1664,
+      "longitude": 29.0500337
+    },
+    "camp_end_date": "2024-05-12T22:55:09.417335+00:00"
+  },
+  {
+    "brands": "Nivea",
+    "camp_start_date": "2024-03-29T22:55:43.207846+00:00",
+    "product": "Güneş Kremleri",
+    "unit": "Monument Sign",
+    "location": {
+      "latitude": 41.0576,
+      "longitude": 28.9153498
+    },
+    "camp_end_date": "2024-05-16T22:55:43.207846+00:00"
+  },
+  {
+    "brands": "Taş Pınar",
+    "camp_start_date": "2024-03-24T22:55:54.344694+00:00",
+    "product": "Yatak",
+    "unit": "Standee",
+    "location": {
+      "latitude": 41.0551,
+      "longitude": 28.9346367
+    },
+    "camp_end_date": "2024-05-06T22:55:54.344694+00:00"
+  },
+  {
+    "brands": "Apple",
+    "camp_start_date": "2024-04-13T22:56:15.365909+00:00",
+    "product": "Bilgisayar",
+    "unit": "Signage",
+    "location": {
+      "latitude": 41.0105,
+      "longitude": 28.8741303
+    },
+    "camp_end_date": "2024-05-19T22:56:15.365909+00:00"
+  },
+  {
+    "brands": "Elidor",
+    "camp_start_date": "2024-03-23T22:56:24.600685+00:00",
+    "product": "Saç Kremleri",
+    "unit": "Display",
+    "location": {
+      "latitude": 40.9804,
+      "longitude": 28.5854223
+    },
+    "camp_end_date": "2024-05-16T22:56:24.600685+00:00"
+  },
+  {
+    "brands": "Eti",
+    "camp_start_date": "2024-03-26T22:55:29.897407+00:00",
+    "product": "Çikolata",
+    "unit": "Hoarding",
+    "location": {
+      "latitude": 41.0133,
+      "longitude": 28.6489262
+    },
+    "camp_end_date": "2024-05-09T22:55:29.897407+00:00"
+  },
+  {
+    "brands": "Lavşa",
+    "camp_start_date": "2024-03-21T22:56:03.270893+00:00",
+    "product": "Doğal Sabunlar",
+    "unit": "Poster",
+    "location": {
+      "latitude": 40.9833,
+      "longitude": 29.1278408
+    },
+    "camp_end_date": "2024-05-17T22:56:03.270893+00:00"
+  },
+  {
+    "brands": "Coca-Cola",
+    "camp_start_date": "2024-03-27T22:56:23.191724+00:00",
+    "product": "Sprite",
+    "unit": "Bus Shelter",
+    "location": {
+      "latitude": 40.9804,
+      "longitude": 28.5854223
+    },
+    "camp_end_date": "2024-05-07T22:56:23.191724+00:00"
+  },
+  {
+    "brands": "Coca-Cola",
+    "camp_start_date": "2024-03-27T22:56:19.825310+00:00",
+    "product": "Fanta",
+    "unit": "LED Sign",
+    "location": {
+      "latitude": 40.9684,
+      "longitude": 29.2620315
+    },
+    "camp_end_date": "2024-04-24T22:56:19.825310+00:00"
+  },
+  {
+    "brands": "Paşabahçe",
+    "camp_start_date": "2024-04-03T22:55:47.856621+00:00",
+    "product": "Cam Eşyalar",
+    "unit": "Display",
+    "location": {
+      "latitude": 41.0338,
+      "longitude": 29.1013674
+    },
+    "camp_end_date": "2024-04-27T22:55:47.856621+00:00"
+  },
+  {
+    "brands": "Ray-Ban",
+    "camp_start_date": "2024-04-08T22:55:24.479182+00:00",
+    "product": "Güneş Gözlükleri",
+    "unit": "Signage",
+    "location": {
+      "latitude": 41.0341,
+      "longitude": 28.8330754
+    },
+    "camp_end_date": "2024-05-04T22:55:24.479182+00:00"
+  },
+  {
+    "brands": "H&M",
+    "camp_start_date": "2024-04-17T22:55:40.410194+00:00",
+    "product": "Çocuk Giyim",
+    "unit": "Window Graphic",
+    "location": {
+      "latitude": 40.9684,
+      "longitude": 29.2620315
+    },
+    "camp_end_date": "2024-05-01T22:55:40.410194+00:00"
+  },
+  {
+    "brands": "H&M",
+    "camp_start_date": "2024-04-06T22:55:11.306729+00:00",
+    "product": "Kadın Giyim",
+    "unit": "Banner",
+    "location": {
+      "latitude": 41.0837,
+      "longitude": 28.8169342
+    },
+    "camp_end_date": "2024-05-03T22:55:11.306729+00:00"
+  },
+  {
+    "brands": "Elidor",
+    "camp_start_date": "2024-03-31T22:56:15.598878+00:00",
+    "product": "Şampuanlar",
+    "unit": "Transit Ad",
+    "location": {
+      "latitude": 40.9804,
+      "longitude": 28.5854223
+    },
+    "camp_end_date": "2024-05-19T22:56:15.598878+00:00"
+  },
+  {
+    "brands": "Ray-Ban",
+    "camp_start_date": "2024-04-04T22:55:14.728142+00:00",
+    "product": "Güneş Gözlükleri",
+    "unit": "Monument Sign",
+    "location": {
+      "latitude": 41.1864,
+      "longitude": 28.7389225
+    },
+    "camp_end_date": "2024-04-25T22:55:14.728142+00:00"
+  },
+  {
+    "brands": "Nestlé",
+    "camp_start_date": "2024-04-18T22:55:46.011508+00:00",
+    "product": "Maggi Erişte",
+    "unit": "Neon Sign",
+    "location": {
+      "latitude": 41.0604,
+      "longitude": 28.9878272
+    },
+    "camp_end_date": "2024-04-22T22:55:46.011508+00:00"
+  },
+  {
+    "brands": "Nike",
+    "camp_start_date": "2024-03-24T22:55:23.296682+00:00",
+    "product": "Çorap",
+    "unit": "Bus Shelter",
+    "location": {
+      "latitude": 41.1271,
+      "longitude": 29.0978248
+    },
+    "camp_end_date": "2024-05-02T22:55:23.296682+00:00"
+  },
+  {
+    "brands": "Heinz",
+    "camp_start_date": "2024-03-30T22:56:19.351726+00:00",
+    "product": "Mayonez",
+    "unit": "LED Sign",
+    "location": {
+      "latitude": 40.8747,
+      "longitude": 29.129416
+    },
+    "camp_end_date": "2024-05-13T22:56:19.351726+00:00"
+  },
+  {
+    "brands": "Maybelline",
+    "camp_start_date": "2024-04-19T22:55:12.230187+00:00",
+    "product": "Makyaj Malzemeleri",
+    "unit": "Digital Screen",
+    "location": {
+      "latitude": 41.0551,
+      "longitude": 28.9346367
+    },
+    "camp_end_date": "2024-05-01T22:55:12.230187+00:00"
+  },
+  {
+    "brands": "Corelle",
+    "camp_start_date": "2024-04-05T22:56:17.264549+00:00",
+    "product": "Yemek Takımları",
+    "unit": "LED Sign",
+    "location": {
+      "latitude": 41.1421,
+      "longitude": 28.457567
+    },
+    "camp_end_date": "2024-05-03T22:56:17.264549+00:00"
+  },
+  {
+    "brands": "Nivea",
+    "camp_start_date": "2024-03-28T22:56:18.908781+00:00",
+    "product": "Vücut Losyonları",
+    "unit": "Neon Sign",
+    "location": {
+      "latitude": 40.8999,
+      "longitude": 29.193645
+    },
+    "camp_end_date": "2024-05-06T22:56:18.908781+00:00"
+  },
+  {
+    "brands": "Dalan",
+    "camp_start_date": "2024-03-31T22:55:58.032269+00:00",
+    "product": "Şampuanlar",
+    "unit": "Wall Mural",
+    "location": {
+      "latitude": 40.9339,
+      "longitude": 29.1650476
+    },
+    "camp_end_date": "2024-05-13T22:55:58.032269+00:00"
+  },
+  {
+    "brands": "Taş Pınar",
+    "camp_start_date": "2024-04-02T22:55:12.907180+00:00",
+    "product": "Yastık",
+    "unit": "Kiosk",
+    "location": {
+      "latitude": 41.0837,
+      "longitude": 28.8169342
+    },
+    "camp_end_date": "2024-04-25T22:55:12.907180+00:00"
+  },
+  {
+    "brands": "Xiaomi",
+    "camp_start_date": "2024-04-12T22:56:09.752915+00:00",
+    "product": "Akıllı Bileklik",
+    "unit": "Bus Shelter",
+    "location": {
+      "latitude": 41.1271,
+      "longitude": 29.0978248
+    },
+    "camp_end_date": "2024-05-11T22:56:09.752915+00:00"
+  },
+  {
+    "brands": "Xiaomi",
+    "camp_start_date": "2024-04-01T22:55:21.457784+00:00",
+    "product": "Mobil Telefon",
+    "unit": "Standee",
+    "location": {
+      "latitude": 40.9339,
+      "longitude": 29.1650476
+    },
+    "camp_end_date": "2024-05-03T22:55:21.457784+00:00"
+  },
+  {
+    "brands": "L'Oreal",
+    "camp_start_date": "2024-04-12T22:55:55.265694+00:00",
+    "product": "Makyaj Malzemeleri",
+    "unit": "Bus Shelter",
+    "location": {
+      "latitude": 41.009,
+      "longitude": 29.2109329
+    },
+    "camp_end_date": "2024-04-27T22:55:55.265694+00:00"
+  },
+  {
+    "brands": "Eti",
+    "camp_start_date": "2024-04-05T22:55:09.174331+00:00",
+    "product": "Bisküvi",
+    "unit": "Panel",
+    "location": {
+      "latitude": 41.107,
+      "longitude": 28.8714513
+    },
+    "camp_end_date": "2024-05-15T22:55:09.174331+00:00"
+  },
+  {
+    "brands": "Eti",
+    "camp_start_date": "2024-04-19T22:55:19.549393+00:00",
+    "product": "Çikolata",
+    "unit": "Display",
+    "location": {
+      "latitude": 41.1421,
+      "longitude": 28.457567
+    },
+    "camp_end_date": "2024-05-13T22:55:19.549393+00:00"
+  },
+  {
+    "brands": "Maybelline",
+    "camp_start_date": "2024-04-04T22:55:39.224878+00:00",
+    "product": "Makyaj Malzemeleri",
+    "unit": "Mobile Billboard",
+    "location": {
+      "latitude": 41.0542,
+      "longitude": 28.8676458
+    },
+    "camp_end_date": "2024-04-26T22:55:39.224878+00:00"
+  },
+  {
+    "brands": "Eti",
+    "camp_start_date": "2024-03-23T22:55:38.539940+00:00",
+    "product": "Süt Ürünleri",
+    "unit": "Digital Screen",
+    "location": {
+      "latitude": 41.0371,
+      "longitude": 28.9774241
+    },
+    "camp_end_date": "2024-04-29T22:55:38.539940+00:00"
+  }
+]

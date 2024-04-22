@@ -16,6 +16,12 @@ credentials:
       logged_in: true
       name: "Tayyar A\u011Fa"
       password: $2b$12$MiKxccOGfRwRNLZPxHBqjeQQuFiI4x9W4ZPSBuL95VDlHuornMe26
+    tuncakar:
+      email: tuna@gmail.com
+      failed_login_attempts: 0
+      logged_in: true
+      name: "Tayyar A\u011Fa"
+      password: password345
 pre-authorized:
   emails:
-  - tgorkemsayer@gmail.com
+    - tgorkemsayer@gmail.com
