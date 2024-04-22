@@ -11,7 +11,8 @@ import collections
 import streamlit_authenticator as stauth
 from datetime import datetime, timezone
 import json
-
+from datetime import datetime
+from datetime import time
 load_dotenv()
 
 os.getenv("GOOGLE_API_KEY")
@@ -244,76 +245,132 @@ try:
             with open('user_photos.json', 'r', encoding='utf-8') as f:
                 user_photos = json.load(f)
 
-            unique_brands = set()
-            unique_locations = set()
+            col1, col2 = st.columns([0.6, 1])
 
 
+            with col1:
+                start_date = st.date_input("Kampanya Başlangıç Tarihi Seçin")
+                end_date = st.date_input("Kampanya Bitiş Tarihi Seçin")
+
+                # Convert the dates to datetime at midnight
+                from datetime import datetime, time, timezone
+
+                # Convert the dates to datetime at midnight
+                start_datetime = datetime.combine(start_date, datetime.min.time(), tzinfo=timezone.utc)
+                end_datetime = datetime.combine(end_date, time(23, 59, 59), tzinfo=timezone.utc)
+
+            #use start_datetime and filter camp_start_date on user_photos
+            # Convert the camp_start_date from string to datetime
             for photo in user_photos:
-                # unique_brands.add(photo.to_dict()['brands'])
+                photo['camp_start_date'] = datetime.strptime(photo['camp_start_date'], "%Y-%m-%dT%H:%M:%S.%f%z")
 
-                location = photo['location']
-                unique_locations.add((location['latitude'], location['longitude']))
+            # Filter the user_photos based on the camp_start_date
+            filtered_photos = [photo for photo in user_photos if
+                               start_datetime <= photo['camp_start_date'] <= end_datetime]
 
-            if user_id:
+            st.write(f"Seçilen tarih aralığında {len(filtered_photos)} adet fotoğraf bulunmaktadır.")
 
-                col1, col2, col3 = st.columns([0.4, 1.2, 0.3])
+            with col2:
+                brands = [photo['brands'] for photo in filtered_photos]
+                unique_brands = list(set(brands))
+                brand_counts = collections.Counter(brands)
 
-                from datetime import datetime
+                selected_brands = st.multiselect("Markaları Seçin", unique_brands)
 
-                with col1:
-                    start_date = st.date_input("Kampanya Başlangıç Tarihi Seçin")
-                    end_date = st.date_input("Kampanya Bitiş Tarihi Seçin")
+                st.write(f"Seçilen markaların sayısı: {len(selected_brands)}")
 
-                    # Convert the dates to datetime at midnight
-                    start_datetime = datetime.combine(start_date, datetime.min.time())
-                    end_datetime = datetime.combine(end_date, datetime.min.time())
-
-                    # Attach the timezone information
-                    start_datetime = start_datetime.replace(tzinfo=timezone.utc)
-                    end_datetime = end_datetime.replace(tzinfo=timezone.utc)
-
-                    filtered_photos = []
-
-                    from datetime import datetime
-
-                    for photo in user_photos:
-                        photo_start_date = datetime.strptime(photo['camp_start_date'], "%Y-%m-%dT%H:%M:%S.%f%z")
-                        photo_end_date = datetime.strptime(photo['camp_end_date'], "%Y-%m-%dT%H:%M:%S.%f%z")
-
-                        if photo_start_date >= start_datetime and photo_end_date <= end_datetime:
-                            filtered_photos.append(photo)
+            brand_counts = {brand: count for brand, count in brand_counts.items() if brand in selected_brands}
 
 
-                with col2:
-                    brands = set()
-                    for photo in filtered_photos:
-                        brands.add(photo['brands'])
+            # Define selected_location before the if block
+            selected_location = None
+            # Ask the user if they want to filter by location
+            filter_by_location = st.sidebar.checkbox('Lokasyon ile filtrelemek ister misiniz?')
 
-                    brand_selection = st.multiselect("Lütfen marka seçin", [brand for brand in brands])
-                    st.write(f"Çalışılmış toplam marka sayısı {len(brands)}.")
-                    st.write(f"Seçilen marka sayısı {len(brand_selection)}.")
+            if filter_by_location:
+                # Create a set of tuples where each tuple contains the latitude and longitude of a location
+                unique_locations = set(
+                    (photo['location']['latitude'], photo['location']['longitude']) for photo in filtered_photos if
+                    photo['brands'] in selected_brands)
+                unique_locations = list(unique_locations)
 
+                selected_location = st.sidebar.selectbox("Lokasyonları Seçin", unique_locations, index=0)
 
-                with col3:
-                    location_selection = st.selectbox("Lütfen lokasyon seçin", [location for location in unique_locations])
-
-                st.divider()
-
-                st.write(f"Seçilen tarih aralığı ve markalara ait toplamda {len(brands)} adet döküman bulundu.")
+            st.divider()
 
 
 
+            col41, col42, col43 = st.columns([1, 1, 1])
 
+            with col41:
 
+                if selected_location is not None:
+                    # Create a DataFrame from the brand_counts dictionary
+                    # Count the brands at the selected location
+                    brand_counts = collections.Counter(photo['brands'] for photo in filtered_photos if
+                                                       photo['brands'] in selected_brands and (
+                                                       photo['location']['latitude'],
+                                                       photo['location']['longitude']) == selected_location)
 
+                    # Create a DataFrame from the brand_counts dictionary
+                    df = pd.DataFrame(list(brand_counts.items()), columns=['Brand', 'Count'])
 
+                    # Display the DataFrame
+                    st.write(df)
 
+                else:
+                    # Create a DataFrame from the brand_counts dictionary
+                    df = pd.DataFrame(list(brand_counts.items()), columns=['Brand', 'Count'])
 
-            else:
-                st.warning("Lütfen kullanıcı ID'sini girin.")
+                    # Display the DataFrame
+                    st.write(df)
 
+            with col42:
+                if selected_location is not None:
+                    # Create a list of dictionaries where each dictionary contains the brand name and its unit
+                    data = [{'Brand': photo['brands'], 'Unit': photo['unit']} for photo in filtered_photos if
+                            photo['brands'] in selected_brands and (
+                            photo['location']['latitude'], photo['location']['longitude']) == selected_location]
 
+                    # Create a DataFrame from the data
+                    df = pd.DataFrame(data)
 
+                    # Display the DataFrame
+                    st.write(df)
+                else:
+                    # Create a list of dictionaries where each dictionary contains the brand name and its unit
+                    data = [{'Brand': photo['brands'], 'Unit': photo['unit']} for photo in filtered_photos if
+                            photo['brands'] in selected_brands]
+
+                    # Create a DataFrame from the data
+                    df = pd.DataFrame(data)
+
+                    # Display the DataFrame
+                    st.write(df)
+
+            with col43:
+
+                if selected_location is not None:
+                    # Create a list of dictionaries where each dictionary contains the brand name, its unit, and its product
+                    data = [{'Brand': photo['brands'], 'Unit': photo['unit'], 'Product': photo['product']} for photo in
+                            filtered_photos if photo['brands'] in selected_brands and (
+                            photo['location']['latitude'], photo['location']['longitude']) == selected_location]
+
+                    # Create a DataFrame from the data
+                    df = pd.DataFrame(data)
+
+                    # Display the DataFrame
+                    st.write(df)
+                else:
+                    # Create a list of dictionaries where each dictionary contains the brand name, its unit, and its product
+                    data = [{'Brand': photo['brands'], 'Unit': photo['unit'], 'Product': photo['product']} for photo in
+                            filtered_photos if photo['brands'] in selected_brands]
+
+                    # Create a DataFrame from the data
+                    df = pd.DataFrame(data)
+
+                    # Display the DataFrame
+                    st.write(df)
 
 
 
