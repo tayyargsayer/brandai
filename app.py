@@ -300,9 +300,10 @@ try:
 
 
 
-            col41, col42, col43 = st.columns([1, 1, 1])
+            col41, col42, col43, col44 = st.columns([1, 1, 1, 1])
 
             with col41:
+                import matplotlib.pyplot as plt
 
                 if selected_location is not None:
                     # Create a DataFrame from the brand_counts dictionary
@@ -318,12 +319,15 @@ try:
                     # Display the DataFrame
                     st.write(df)
 
+
+
                 else:
                     # Create a DataFrame from the brand_counts dictionary
                     df = pd.DataFrame(list(brand_counts.items()), columns=['Brand', 'Count'])
 
                     # Display the DataFrame
                     st.write(df)
+
 
             with col42:
                 if selected_location is not None:
@@ -372,9 +376,112 @@ try:
                     # Display the DataFrame
                     st.write(df)
 
+        st.divider()
+
+        import matplotlib.pyplot as plt
+
+        # Create separate columns for brands, units, and products
+        col51, col52, col53 = st.columns([1, 1, 1])
+
+        if selected_location is not None:
+            # Count the brands, units, and products at the selected location
+            brand_counts = collections.Counter(photo['brands'] for photo in filtered_photos if
+                                               photo['brands'] in selected_brands and (
+                                                   photo['location']['latitude'],
+                                                   photo['location']['longitude']) == selected_location)
+            unit_counts = collections.Counter(photo['unit'] for photo in filtered_photos if
+                                              photo['brands'] in selected_brands and (
+                                                  photo['location']['latitude'],
+                                                  photo['location']['longitude']) == selected_location)
+            product_counts = collections.Counter(photo['product'] for photo in filtered_photos if
+                                                 photo['brands'] in selected_brands and (
+                                                     photo['location']['latitude'],
+                                                     photo['location']['longitude']) == selected_location)
+
+            # Create DataFrames from the count dictionaries
+            brand_df = pd.DataFrame(list(brand_counts.items()), columns=['Brand', 'Count'])
+            unit_df = pd.DataFrame(list(unit_counts.items()), columns=['Unit', 'Count'])
+            product_df = pd.DataFrame(list(product_counts.items()), columns=['Product', 'Count'])
+
+            # Create pie charts in the corresponding columns
+            with col51:
+                fig, ax = plt.subplots(figsize=(4, 4))
+                ax.pie(brand_df['Count'], labels=brand_df['Brand'], autopct='%1.1f%%', textprops={'fontsize': 8})
+                st.pyplot(fig)
+
+            with col52:
+                fig, ax = plt.subplots(figsize=(4, 4))
+                ax.pie(unit_df['Count'], labels=unit_df['Unit'], autopct='%1.1f%%', textprops={'fontsize': 8})
+                st.pyplot(fig)
+
+            with col53:
+                fig, ax = plt.subplots(figsize=(4, 4))
+                ax.pie(product_df['Count'], labels=product_df['Product'], autopct='%1.1f%%', textprops={'fontsize': 8})
+                st.pyplot(fig)
+
+        else:
+            # Count the brands, units, and products
+            brand_counts = collections.Counter(photo['brands'] for photo in filtered_photos if
+                                               photo['brands'] in selected_brands)
+            unit_counts = collections.Counter(photo['unit'] for photo in filtered_photos if
+                                              photo['brands'] in selected_brands)
+            product_counts = collections.Counter(photo['product'] for photo in filtered_photos if
+                                                 photo['brands'] in selected_brands)
+
+            # Create DataFrames from the count dictionaries
+            brand_df = pd.DataFrame(list(brand_counts.items()), columns=['Brand', 'Count'])
+            unit_df = pd.DataFrame(list(unit_counts.items()), columns=['Unit', 'Count'])
+            product_df = pd.DataFrame(list(product_counts.items()), columns=['Product', 'Count'])
+
+            # Create pie charts in the corresponding columns
+            with col51:
+                fig, ax = plt.subplots(figsize=(4, 4))
+                ax.pie(brand_df['Count'], labels=brand_df['Brand'], autopct='%1.1f%%', textprops={'fontsize': 8})
+                st.pyplot(fig)
+
+            with col52:
+                fig, ax = plt.subplots(figsize=(4, 4))
+                ax.pie(unit_df['Count'], labels=unit_df['Unit'], autopct='%1.1f%%', textprops={'fontsize': 8})
+                st.pyplot(fig)
+
+            with col53:
+                fig, ax = plt.subplots(figsize=(4, 4))
+                ax.pie(product_df['Count'], labels=product_df['Product'], autopct='%1.1f%%', textprops={'fontsize': 8})
+                st.pyplot(fig)
 
 
 
+        import matplotlib.pyplot as plt
+        import io
+
+        # Create a single figure with three subplots
+        fig, axs = plt.subplots(1, 3, figsize=(12, 4))
+
+        # Create the pie charts in the subplots
+        axs[0].pie(brand_df['Count'], labels=brand_df['Brand'], autopct='%1.1f%%', textprops={'fontsize': 8})
+        axs[1].pie(unit_df['Count'], labels=unit_df['Unit'], autopct='%1.1f%%', textprops={'fontsize': 8})
+        axs[2].pie(product_df['Count'], labels=product_df['Product'], autopct='%1.1f%%', textprops={'fontsize': 8})
+
+        # Set the titles for the subplots
+        axs[0].set_title('Brands')
+        axs[1].set_title('Units')
+        axs[2].set_title('Products')
+
+        # Adjust the layout
+        plt.tight_layout()
+
+        # Save the figure to a BytesIO object
+        buf = io.BytesIO()
+        plt.savefig(buf, format='png')
+        buf.seek(0)
+
+        # Use st.download_button to download the figure
+        st.download_button(
+            label="Tabloları İndir",
+            data=buf,
+            file_name='pie_charts.png',
+            mime='image/png'
+        )
 
 
 
