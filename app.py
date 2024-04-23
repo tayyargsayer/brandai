@@ -42,7 +42,7 @@ safety_settings = [
         "threshold": "BLOCK_MEDIUM_AND_ABOVE"
     },
 ]
-
+pd.set_option('display.max_colwidth', 4)
 
 model = genai.GenerativeModel(model_name="gemini-1.0-pro-vision-latest",
                               generation_config=generation_config,
@@ -300,7 +300,7 @@ try:
 
 
 
-            col41, col42, col43, col44 = st.columns([1, 1, 1, 1])
+            col41, col42, col43 = st.columns([1, 1, 1])
 
             with col41:
                 import matplotlib.pyplot as plt

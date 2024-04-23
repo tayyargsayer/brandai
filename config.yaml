@@ -20,8 +20,8 @@ credentials:
       email: tuna@gmail.com
       failed_login_attempts: 0
       logged_in: true
-      name: "Tayyar A\u011Fa"
-      password: $2b$12$jU7ztlI/PD9odrKSOPrdPu2Z0E.36SWqlZnF/1s.FHbi0ZWNxkqKm
+      name: "Tuna Hoca"
+      password: password123
 pre-authorized:
   emails:
   - tgorkemsayer@gmail.com
