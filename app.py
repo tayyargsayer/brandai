@@ -116,7 +116,7 @@ try:
         st.sidebar.write(f'Hoşgeldin *{st.session_state["name"]}*')
 
         st.header("Eye Authentic Hoşgeldiniz")
-        st.text("Son Güncelleme: 20.04.2024")
+        st.text("Son Güncelleme: 23.04.2024")
 
         st.sidebar.title("Eye Authentic Assistant")
         st.sidebar.subheader("Görselinizin yüklenmesi biraz zaman alabilir. Lütfen bekleyin.")
