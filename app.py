@@ -268,7 +268,9 @@ try:
             filtered_photos = [photo for photo in user_photos if
                                start_datetime <= photo['camp_start_date'] <= end_datetime]
 
-            st.write(f"Seçilen tarih aralığında {len(filtered_photos)} adet fotoğraf bulunmaktadır.")
+            st.write(f"Seçilen tarih aralığında tüm markalardan toplam {len(filtered_photos)} adet fotoğraf bulunmaktadır.")
+
+
 
             with col2:
                 brands = [photo['brands'] for photo in filtered_photos]
@@ -406,17 +408,23 @@ try:
             # Create pie charts in the corresponding columns
             with col51:
                 fig, ax = plt.subplots(figsize=(4, 4))
-                ax.pie(brand_df['Count'], labels=brand_df['Brand'], autopct='%1.1f%%', textprops={'fontsize': 8})
+                wedges, texts, autotexts = ax.pie(brand_df['Count'], autopct='%1.1f%%', textprops={'fontsize': 8})
+                ax.legend(wedges, brand_df['Brand'], title="Brands", loc="center left", bbox_to_anchor=(1, 0, 0.5, 1))
+                plt.setp(autotexts, size=8, weight="bold")
                 st.pyplot(fig)
 
             with col52:
                 fig, ax = plt.subplots(figsize=(4, 4))
-                ax.pie(unit_df['Count'], labels=unit_df['Unit'], autopct='%1.1f%%', textprops={'fontsize': 8})
+                wedges, texts, autotexts = ax.pie(unit_df['Count'], autopct='%1.1f%%', textprops={'fontsize': 8})
+                ax.legend(wedges, unit_df['Unit'], title="Units", loc="upper center", bbox_to_anchor=(0.5, -0.05))
+                plt.setp(autotexts, size=8, weight="bold")
                 st.pyplot(fig)
 
             with col53:
                 fig, ax = plt.subplots(figsize=(4, 4))
-                ax.pie(product_df['Count'], labels=product_df['Product'], autopct='%1.1f%%', textprops={'fontsize': 8})
+                wedges, texts, autotexts = ax.pie(product_df['Count'], autopct='%1.1f%%', textprops={'fontsize': 8})
+                ax.legend(wedges, product_df['Product'], title="Products", loc="upper center", bbox_to_anchor=(0.5, -0.05))
+                plt.setp(autotexts, size=8, weight="bold")
                 st.pyplot(fig)
 
         else:
@@ -436,19 +444,24 @@ try:
             # Create pie charts in the corresponding columns
             with col51:
                 fig, ax = plt.subplots(figsize=(4, 4))
-                ax.pie(brand_df['Count'], labels=brand_df['Brand'], autopct='%1.1f%%', textprops={'fontsize': 8})
+                wedges, texts, autotexts = ax.pie(brand_df['Count'], autopct='%1.1f%%', textprops={'fontsize': 8})
+                ax.legend(wedges, brand_df['Brand'], title="Brands", loc="upper center", bbox_to_anchor=(0.5, -0.05))
+                plt.setp(autotexts, size=8, weight="bold")
                 st.pyplot(fig)
 
             with col52:
                 fig, ax = plt.subplots(figsize=(4, 4))
-                ax.pie(unit_df['Count'], labels=unit_df['Unit'], autopct='%1.1f%%', textprops={'fontsize': 8})
+                wedges, texts, autotexts = ax.pie(unit_df['Count'], autopct='%1.1f%%', textprops={'fontsize': 8})
+                ax.legend(wedges, unit_df['Unit'], title="Units", loc="upper center", bbox_to_anchor=(0.5, -0.05))
+                plt.setp(autotexts, size=8, weight="bold")
                 st.pyplot(fig)
 
             with col53:
                 fig, ax = plt.subplots(figsize=(4, 4))
-                ax.pie(product_df['Count'], labels=product_df['Product'], autopct='%1.1f%%', textprops={'fontsize': 8})
+                wedges, texts, autotexts = ax.pie(product_df['Count'], autopct='%1.1f%%', textprops={'fontsize': 8})
+                ax.legend(wedges, product_df['Product'], title="Products", loc="upper center", bbox_to_anchor=(0.5, -0.05))
+                plt.setp(autotexts, size=8, weight="bold")
                 st.pyplot(fig)
-
 
 
         import matplotlib.pyplot as plt
@@ -483,6 +496,21 @@ try:
             mime='image/png'
         )
 
+
+        st.divider()
+
+        # Create a DataFrame that contains the latitude and longitude of each photo
+        locations_df = pd.DataFrame(
+            [(photo['location']['latitude'], photo['location']['longitude']) for photo in filtered_photos],
+            columns=['lat', 'lon'])
+
+        # If the checkbox is checked, filter the DataFrame to only include the selected location
+        if filter_by_location and selected_location is not None:
+            locations_df = locations_df[
+                (locations_df['lat'] == selected_location[0]) & (locations_df['lon'] == selected_location[1])]
+
+        # Display the map
+        st.map(locations_df)
 
 
     elif st.session_state["authentication_status"] is False:
